@@ -7,5 +7,48 @@ and open the template in the editor.
     Created on : 30/06/2017, 10:05:57
     Author     : user1
 */
+body {
+  width: 100%;
+  margin: 0px; }
+  body .header {
+    min-width: 50%;
+    height: 80px;
+    background-color: #009688; }
+    body .header .title {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 40px;
+      color: #ffffff;
+      padding-left: 45%;
+      padding-top: -1%; }
+  body .section {
+    min-width: 80%;
+    min-height: 813px;
+    border: solid 1px; }
+  body .footer {
+    min-width: 30%;
+    height: 80px;
+    background-color: #009688; }
+
+.login {
+  min-width: 15%;
+  max-width: 25%;
+  min-height: 250px;
+  border: solid 1px;
+  margin-left: 36%;
+  margin-top: 11%; }
+  .login .p_corpo_inputs .p_inputs {
+    margin-left: 26%;
+    margin-top: 10%; }
+    .login .p_corpo_inputs .p_inputs .ipt-email {
+      width: 174px; }
+  .login .p_corpo_inputs .title_login {
+    font-size: 35px;
+    font-family: 'Open Sans', sans-serif;
+    color: #116961;
+    text-align: center; }
+  .login .p_corpo_inputs .title_inputs {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #116961; }
 
 /*# sourceMappingURL=login.css.map */

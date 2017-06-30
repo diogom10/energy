@@ -8,3 +8,49 @@ and open the template in the editor.
     Author     : user1
 */
 
+@import "global";
+
+
+.login
+{ 
+    min-width: 15%;
+    max-width: 25%;
+    min-height:250px; 
+    border: solid 1px;
+    margin-left: 36%;
+    margin-top: 11%;
+    
+    .p_corpo_inputs
+    {
+      
+
+        .p_inputs
+        {
+            margin-left:26%;
+            margin-top:10%;
+            
+            .ipt-email
+            {
+              width: 174px;
+            }
+        }
+
+        .title_login
+        {
+            font-size:35px;
+            font-family: 'Open Sans', sans-serif;
+            color:#116961;
+            text-align: center
+        }
+
+        .title_inputs
+        {
+            font-size:16px;
+            font-family: 'Open Sans', sans-serif;
+            color:#116961;
+
+        }
+
+
+    }
+}
