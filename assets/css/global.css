@@ -1,8 +1,23 @@
-background {
-  width: 50px; }
-  background h1 {
-    font-size: 20px;
-    font-family: arial;
-    color: blue; }
+body {
+  width: 100%;
+  margin: 0px; }
+  body .header {
+    min-width: 50%;
+    height: 80px;
+    background-color: #009688; }
+    body .header .title {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 40px;
+      color: #ffffff;
+      padding-left: 45%;
+      padding-top: -1%; }
+  body .section {
+    min-width: 30%;
+    min-height: 813px;
+    border: solid 1px; }
+  body .footer {
+    min-width: 30%;
+    height: 80px;
+    background-color: #009688; }
 
 /*# sourceMappingURL=global.css.map */
