@@ -23,23 +23,31 @@
         <div class="header">
             <div class="title">SIGERE</div>
         </div>
+
         <div class="section">
             <div class="login">
                 <div class="p_corpo_inputs">
-                    <div class="title_login">Faça seu Login</div>
-                    <div class="p_inputs title_inputs">
-                        <label>Email: </label>
-                        <input type="email" class="ipt-email" >
-                        <br/><br/>
-                        <label>Senha:</label>
-                        <input type="password" class="ipt-password">
-                        <br/>
-                        <div class="btn">Login</div>
-                        <div class="btn">Cadastro</div>
+                    <div class="title_login">Bem vindo!
+                        <div class="sub-title">Por favor, digite o seu email e senha.</div>
                     </div>
+                    <div class="p_inputs title_inputs">
+                        <!-- <label>Email: </label>-->
+                        <input type="email" class="ipt-email" placeholder="Email" >
+                        <!-- <br/><br/>-->
+                        <!-- <label>Senha:</label>-->
+                        <br/>
+                        <input type="password" class="ipt-password" placeholder="Senha">
+                        <br/>
+
+                    </div>
+                    
+                        <div class="btn-login title_inputs"></div>
+                        <div class="">Cadastro</div>
+                 
                 </div>
             </div>
         </div>
+
         <div class="footer"></div>
     </body>
 

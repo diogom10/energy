@@ -9,38 +9,83 @@ and open the template in the editor.
 */
 
 @import "global";
-
+$fonte-inputs:  'Open Sans', sans-serif;
 
 .login
 { 
-    min-width: 15%;
-    max-width: 25%;
-    min-height:250px; 
-    border: solid 1px;
-    margin-left: 36%;
-    margin-top: 11%;
-    
+    min-width: 400px;
+    width: 24%;
+    height: 316px;
+    border: solid 1px #b3b3b3;
+    border-radius: 10px;
+    margin-left: 40%;
+    margin-top: 10%;
+
     .p_corpo_inputs
     {
-      
-
         .p_inputs
         {
-            margin-left:26%;
-            margin-top:10%;
+            margin-left: 20%;
+            margin-top: 10%;
             
             .ipt-email
             {
-              width: 174px;
+                width: 197px;
+                height:23px;
+                font-family:$fonte-inputs;
+                width: 283px;
+                height: 41px;
+                margin-bottom:1%; 
+               
+                
             }
+
+            .ipt-password
+            {
+                width: 190px;
+                height:23px; 
+                font-family:$fonte-inputs;
+                width: 283px;
+                height: 41px;
+            }
+
+
+
         }
+
+
+
+        .btn-login
+        {
+            border-radius: 1%;
+            margin: 5% 0 3% 0;
+            height: 30px;
+            width: 76%;
+            background-color:#428bca;
+
+
+        }
+
+
 
         .title_login
         {
-            font-size:35px;
+            font-size:25px;
             font-family: 'Open Sans', sans-serif;
             color:#116961;
-            text-align: center
+            text-align: center;
+
+            margin-top:3%; 
+
+
+        }
+
+        .sub-title
+        {
+            font-size:13px;
+            border-bottom: solid 1px #b3b3b3;
+            margin-top:2%; 
+
         }
 
         .title_inputs
@@ -49,6 +94,11 @@ and open the template in the editor.
             font-family: 'Open Sans', sans-serif;
             color:#116961;
 
+        }
+        
+        .p_btn
+        {
+            margin-left:1%; 
         }
 
 

@@ -1,23 +1,24 @@
 body {
   width: 100%;
-  margin: 0px; }
+  margin: 0 auto; }
   body .header {
-    min-width: 50%;
-    height: 80px;
-    background-color: #009688; }
+    background-color: #009688;
+    width: 100%;
+    height: 80px; }
     body .header .title {
       font-family: 'Open Sans', sans-serif;
       font-size: 40px;
       color: #ffffff;
-      padding-left: 45%;
-      padding-top: -1%; }
+      margin-left: 45%; }
   body .section {
-    min-width: 80%;
-    min-height: 813px;
-    border: solid 1px; }
+    width: 100%;
+    height: 700px;
+    position: absolute; }
   body .footer {
-    min-width: 30%;
+    width: 100%;
     height: 80px;
-    background-color: #009688; }
+    background-color: #009688;
+    position: absolute;
+    bottom: 0%; }
 
 /*# sourceMappingURL=global.css.map */
