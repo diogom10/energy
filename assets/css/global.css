@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -7,5 +8,29 @@ and open the template in the editor.
     Created on : 29/06/2017, 22:03:05
     Author     : bonde_000
 */
+=======
+body {
+  width: 100%;
+  margin: 0 auto; }
+  body .header {
+    background-color: #009688;
+    width: 100%;
+    height: 80px; }
+    body .header .title {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 40px;
+      color: #ffffff;
+      margin-left: 45%; }
+  body .section {
+    width: 100%;
+    height: 700px;
+    position: absolute; }
+  body .footer {
+    width: 100%;
+    height: 80px;
+    background-color: #009688;
+    position: absolute;
+    bottom: 0%; }
+>>>>>>> be5e2c63b32ec8d097c0391fa79c65b7e37e52a1
 
 /*# sourceMappingURL=global.css.map */
