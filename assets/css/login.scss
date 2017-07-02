@@ -10,24 +10,26 @@ and open the template in the editor.
 
 @import "global";
 $fonte-inputs:  'Open Sans', sans-serif;
+$borda-login:#cacaca;
 
 .login
 { 
-    min-width: 400px;
-    width: 24%;
-    height: 316px;
-    border: solid 1px #b3b3b3;
+    // min-width: 350px;
+    width: 30%;
+    min-width: 403px;
+
+    border: solid 1px $borda-login;
     border-radius: 10px;
-    margin-left: 40%;
-    margin-top: 10%;
+    margin-left: 36%;
+    margin-top: 7%;
 
     .p_corpo_inputs
     {
         .p_inputs
         {
-            margin-left: 20%;
+            margin-left: 14%;
             margin-top: 10%;
-            
+
             .ipt-email
             {
                 width: 197px;
@@ -36,8 +38,8 @@ $fonte-inputs:  'Open Sans', sans-serif;
                 width: 283px;
                 height: 41px;
                 margin-bottom:1%; 
-               
-                
+
+
             }
 
             .ipt-password
@@ -57,13 +59,27 @@ $fonte-inputs:  'Open Sans', sans-serif;
 
         .btn-login
         {
-            border-radius: 1%;
-            margin: 5% 0 3% 0;
-            height: 30px;
-            width: 76%;
-            background-color:#428bca;
+            border-radius: 5px;
+            margin: 3% 0% 0% 14%;
+            height: 39px;
+            width: 71%;
+            background-color: #428bca;
+        }
 
+        .btn-login:hover
+            {
+            background-color: #3b7ab1;
+            cursor:pointer;
+        }
 
+        .text-btn
+        {
+            color: #ffffff;
+            font-family: "Open Sans", sans-serif;
+            //text-align: center;
+            position: absolute;
+            margin-top: 9px;
+            margin-left: 9%;
         }
 
 
@@ -75,15 +91,12 @@ $fonte-inputs:  'Open Sans', sans-serif;
             color:#116961;
             text-align: center;
 
-            margin-top:3%; 
-
-
         }
 
         .sub-title
         {
             font-size:13px;
-            border-bottom: solid 1px #b3b3b3;
+            border-bottom: solid 1px $borda-login;
             margin-top:2%; 
 
         }
@@ -95,10 +108,37 @@ $fonte-inputs:  'Open Sans', sans-serif;
             color:#116961;
 
         }
-        
+
         .p_btn
         {
             margin-left:1%; 
+        }
+
+        .f_login
+        {
+            display:table;
+            width:100%;
+            font-family:$fonte_inputs;
+            font-size: 13px;
+            margin-top: 7%;
+            margin-bottom: 1%;
+
+            .cadastro
+            {
+                float:left;
+                margin-left:1%;
+                color:#316694;
+                cursor:pointer;
+            }
+
+            .senha
+            {
+                float:left;
+                margin-left: 33%;
+                color:#316694;
+                cursor:pointer;
+
+            }
         }
 
 
