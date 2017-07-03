@@ -53,6 +53,8 @@
 
                 </div>
             </div>
+            
+            <?php  $this->load->view('modal/cadastro_view.php');?>
         </div>
 
         <div class="footer"></div>
