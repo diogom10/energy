@@ -12,19 +12,21 @@ and open the template in the editor.
 $fonte-inputs:  'Open Sans', sans-serif;
 $borda-login:#cacaca;
 $fonte-inputs-tamanho:15px;
+
 .login
 { 
-    margin-left: 34%;
+    margin-left: 36%;
     margin-top: 7%;
-    width: 28%;
+    width: 25%;
     min-width: 300px;
-    
+   
     .p_corpo_inputs
     {
 
 
         border: solid 1px $borda-login;
         border-radius: 10px;
+         background-color: #ffffff;
 
 
         .p_inputs
@@ -36,14 +38,14 @@ $fonte-inputs-tamanho:15px;
             .ipt-geral
             {
                 width: 100%;
-                height: 41px;
-               font-family:$fonte-inputs;
+                height: 37px;
+                font-family:$fonte-inputs;
             }
             .ipt-email
             {
 
-               
-            
+
+
                 margin-bottom:1%; 
                 font-size:$fonte-inputs-tamanho;
 
@@ -53,7 +55,7 @@ $fonte-inputs-tamanho:15px;
             .ipt-password
             {
 
-               
+
                 font-size:$fonte-inputs-tamanho;
             }
 
