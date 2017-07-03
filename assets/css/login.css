@@ -21,25 +21,23 @@ body {
       margin-left: 45%; }
   body .section {
     width: 100%;
-    height: 700px;
-    position: absolute; }
+    margin-bottom: 7%; }
   body .footer {
     width: 100%;
     height: 80px;
     background-color: #009688;
-    position: absolute;
+    position: fixed;
     bottom: 0%; }
 
 .login {
-  min-width: 400px;
-  width: 24%;
-  height: 316px;
-  border: solid 1px #b3b3b3;
+  width: 30%;
+  min-width: 403px;
+  border: solid 1px #cacaca;
   border-radius: 10px;
-  margin-left: 40%;
-  margin-top: 10%; }
+  margin-left: 36%;
+  margin-top: 7%; }
   .login .p_corpo_inputs .p_inputs {
-    margin-left: 20%;
+    margin-left: 14%;
     margin-top: 10%; }
     .login .p_corpo_inputs .p_inputs .ipt-email {
       width: 197px;
@@ -55,20 +53,28 @@ body {
       width: 283px;
       height: 41px; }
   .login .p_corpo_inputs .btn-login {
-    border-radius: 1%;
-    margin: 5% 0 3% 0;
-    height: 30px;
-    width: 76%;
+    border-radius: 5px;
+    margin: 3% 0% 0% 14%;
+    height: 39px;
+    width: 71%;
     background-color: #428bca; }
+  .login .p_corpo_inputs .btn-login:hover {
+    background-color: #3b7ab1;
+    cursor: pointer; }
+  .login .p_corpo_inputs .text-btn {
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    position: absolute;
+    margin-top: 9px;
+    margin-left: 9%; }
   .login .p_corpo_inputs .title_login {
     font-size: 25px;
     font-family: 'Open Sans', sans-serif;
     color: #116961;
-    text-align: center;
-    margin-top: 3%; }
+    text-align: center; }
   .login .p_corpo_inputs .sub-title {
     font-size: 13px;
-    border-bottom: solid 1px #b3b3b3;
+    border-bottom: solid 1px #cacaca;
     margin-top: 2%; }
   .login .p_corpo_inputs .title_inputs {
     font-size: 16px;
@@ -76,5 +82,22 @@ body {
     color: #116961; }
   .login .p_corpo_inputs .p_btn {
     margin-left: 1%; }
+  .login .p_corpo_inputs .f_login {
+    display: table;
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    margin-top: 7%;
+    margin-bottom: 1%; }
+    .login .p_corpo_inputs .f_login .cadastro {
+      float: left;
+      margin-left: 1%;
+      color: #316694;
+      cursor: pointer; }
+    .login .p_corpo_inputs .f_login .senha {
+      float: left;
+      margin-left: 33%;
+      color: #316694;
+      cursor: pointer; }
 
 /*# sourceMappingURL=login.css.map */

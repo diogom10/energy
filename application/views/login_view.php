@@ -40,10 +40,15 @@
                         <br/>
 
                     </div>
-                    
-                        <div class="btn-login title_inputs"></div>
-                        <div class="">Cadastro</div>
-                 
+
+                    <div class="btn-login">
+                        <div class=" text-btn">Logar</div>
+                    </div>
+                    <div class="f_login">
+                        <div class="cadastro">Ainda não é cadastrado?</div>
+                        <div class="senha">Esqueceu a Senha?</div>
+                    </div>
+
                 </div>
             </div>
         </div>
