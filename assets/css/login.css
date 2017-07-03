@@ -64,9 +64,9 @@ body {
     .login .p_corpo_inputs .btn-login {
       border-radius: 5px;
       margin: 2% 0% 0% 0%;
-      height: 39px;
-      width: 101%;
-      background-color: #428bca; }
+      background-color: #428bca;
+      padding: 10px 0;
+      width: 101%; }
     .login .p_corpo_inputs .btn-login:hover {
       background-color: #3b7ab1;
       cursor: pointer; }
@@ -74,8 +74,7 @@ body {
       color: #ffffff;
       font-family: "Open Sans", sans-serif;
       text-align: center;
-      position: relative;
-      bottom: -3px; }
+      position: relative; }
     .login .p_corpo_inputs .title_login {
       font-size: 25px;
       font-family: 'Open Sans', sans-serif;
