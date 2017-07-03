@@ -30,9 +30,9 @@ body {
     bottom: 0%; }
 
 .login {
-  margin-left: 37%;
+  margin-left: 34%;
   margin-top: 7%;
-  width: 22%;
+  width: 28%;
   min-width: 300px; }
   .login .p_corpo_inputs {
     border: solid 1px #cacaca;
@@ -41,16 +41,14 @@ body {
       margin-left: 5%;
       margin-right: 5%;
       margin-top: 10%; }
-      .login .p_corpo_inputs .p_inputs .ipt-email {
-        font-family: "Open Sans", sans-serif;
+      .login .p_corpo_inputs .p_inputs .ipt-geral {
         width: 100%;
         height: 41px;
+        font-family: "Open Sans", sans-serif; }
+      .login .p_corpo_inputs .p_inputs .ipt-email {
         margin-bottom: 1%;
         font-size: 15px; }
       .login .p_corpo_inputs .p_inputs .ipt-password {
-        font-family: "Open Sans", sans-serif;
-        width: 100%;
-        height: 41px;
         font-size: 15px; }
     .login .p_corpo_inputs .btn-login {
       border-radius: 5px;

@@ -5,6 +5,7 @@
         <meta charset="UTF-8" />
 
         <link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>assets/css/login.css"/>
+         <link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>assets/css/modal_cadastro.css"/>
         <link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>assets/bootstrap/css/bootstrap.min.css"/>
         <script  src="<?php echo base_url(); ?>assets/js/jquery-3.2.1.min  .js"></script>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -25,6 +26,7 @@
         </div>
 
         <div class="section">
+             
             <div class="login">
                 <div class="p_corpo_inputs">
                     <div class="title_login">Bem vindo!
@@ -32,11 +34,11 @@
                     </div>
                     <div class="p_inputs title_inputs">
                         <!-- <label>Email: </label>-->
-                        <input type="email" class="ipt-email" placeholder="Email" >
+                        <input type="email" class="ipt-geral ipt-email" placeholder="Email" >
                         <!-- <br/><br/>-->
                         <!-- <label>Senha:</label>-->
                         <br/>
-                        <input type="password" class="ipt-password" placeholder="Senha">
+                        <input type="password" class="ipt-geral ipt-password" placeholder="Senha">
                         <br/>
 
                         <div class="btn-login">
@@ -55,6 +57,8 @@
             </div>
             
             <?php  $this->load->view('modal/cadastro_view.php');?>
+            
+           
         </div>
 
         <div class="footer"></div>

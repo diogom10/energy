@@ -1,0 +1,45 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 03/07/2017, 11:21:03
+    Author     : user1
+*/
+.geral_modal {
+  width: 30%;
+  height: 327px;
+  min-width: 100px;
+  position: fixed;
+  top: 22%;
+  left: 33%; }
+  .geral_modal .visual_modal {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    border: solid 1px #b7b7b7;
+    border-radius: 9px; }
+    .geral_modal .visual_modal .header-cadastro {
+      text-align: center;
+      font-family: "Open Sans", sans-serif;
+      font-size: 25px;
+      color: #116961;
+      border-bottom: solid 1px #b7b7b7; }
+    .geral_modal .visual_modal .section-cadastro {
+      margin-left: 1%; }
+      .geral_modal .visual_modal .section-cadastro .ipt-geral-modal {
+        margin-top: 2%;
+        font-family: "Open Sans", sans-serif; }
+      .geral_modal .visual_modal .section-cadastro .ipt-modal-nome {
+        width: 70%;
+        height: 34px; }
+      .geral_modal .visual_modal .section-cadastro .ipt-modal-email {
+        width: 50%;
+        height: 34px;
+        margin-right: 19%; }
+      .geral_modal .visual_modal .section-cadastro .ipt-modal-senha {
+        width: 45%;
+        height: 34px; }
+
+/*# sourceMappingURL=modal_cadastro.css.map */
