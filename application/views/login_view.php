@@ -39,11 +39,13 @@
                         <input type="password" class="ipt-password" placeholder="Senha">
                         <br/>
 
+                        <div class="btn-login">
+                            <div class=" text-btn">Logar</div>
+                        </div>
+
                     </div>
 
-                    <div class="btn-login">
-                        <div class=" text-btn">Logar</div>
-                    </div>
+
                     <div class="f_login">
                         <div class="cadastro">Ainda não é cadastrado?</div>
                         <div class="senha">Esqueceu a Senha?</div>
