@@ -15,10 +15,10 @@ $cor_fonte_modal:#116961;
 .geral_modal
 {
     display:none;
-    width: 30%;
+    // width: 40%;
     min-width: 400px; 
     top: 22%;
-    left: 33%;
+    left: 23%;
     position: absolute;
     z-index: 9999; /* número máximo é 9999 */
 
@@ -36,7 +36,7 @@ $cor_fonte_modal:#116961;
             font-family:$fonte-geral;
             font-size: 25px;
             color:$cor_fonte_modal;
-            border-bottom: solid 1px $borda-modal; 
+            //border-bottom: solid 1px $borda-modal; 
 
         }
         .section-cadastro
@@ -46,26 +46,27 @@ $cor_fonte_modal:#116961;
 
             .ipt-geral-modal
             {
-                margin-top:2%;
-                font-size: 13px;
+                margin-top:1%;
+                font-size: 15px;
                 font-family:$fonte-geral; 
-
+                margin-top: 4px;
+                
             }
             .ipt-modal-nome
             {
                 width: 70%;
-                height: 34px;
+                height: 37px;
             }
             .ipt-modal-email
             {
                 width: 50%;
-                height: 34px;
+                height: 37px;
                 margin-right: 19%;
             }
             .ipt-modal-senha
             {
                 width: 45%;
-                height: 34px;
+                height: 37px;
             }
         }
 
@@ -94,7 +95,7 @@ $cor_fonte_modal:#116961;
                     color:#ffffff;
                     text-align:center;
                     position: relative;
-                    
+
                 }
             }
 
