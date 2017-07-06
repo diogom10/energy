@@ -12,8 +12,8 @@ and open the template in the editor.
   display: none;
   width: 40%;
   min-width: 400px;
-  top: 22%;
-  left: 30%;
+  top: 24%;
+  left: 29%;
   position: absolute;
   z-index: 9999;
   /* n├║mero m├íximo ├® 9999 */ }
@@ -28,7 +28,7 @@ and open the template in the editor.
       font-family: "Open Sans", sans-serif;
       font-size: 25px;
       color: #116961;
-      padding-bottom: 3%; }
+      padding-bottom: 1%; }
     .geral_modal .visual_modal .section-cadastro {
       position: relative;
       left: 4%; }
@@ -39,20 +39,19 @@ and open the template in the editor.
         margin-top: 4px; }
       .geral_modal .visual_modal .section-cadastro .ipt-modal-nome {
         width: 70%;
-        height: 37px; }
+        height: 32px; }
       .geral_modal .visual_modal .section-cadastro .ipt-modal-email {
         width: 50%;
-        height: 37px;
+        height: 32px;
         margin-right: 19%; }
       .geral_modal .visual_modal .section-cadastro .ipt-modal-senha {
         width: 45%;
-        height: 37px; }
+        height: 32px; }
     .geral_modal .visual_modal .footer-cadastro {
       display: table;
       width: 86%;
       height: 50px;
-      margin-top: 4%;
-      margin-bottom: 1%; }
+      margin-top: 2%; }
       .geral_modal .visual_modal .footer-cadastro .btn-done {
         width: 25%;
         padding: 10px 0;

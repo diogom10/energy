@@ -21,7 +21,7 @@
     <body>
         <div class="masc"></div>
 
-        <div class="close_modal">
+      
             <div class="header">
                 <div class="title">SIGERE</div>
             </div>
@@ -64,7 +64,7 @@
             </div>
 
             <div class="footer"></div>
-        </div>
+       
     </body>
 
 

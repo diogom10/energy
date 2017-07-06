@@ -14,6 +14,7 @@ class Sigere extends CI_Controller {
         $this->load->helper('form');
         $data['title'] = "Sigere";
         $this->load->view('login_view.php', $data);
+        //$this->load->view('home_view.php', $data);
     }
 
 }

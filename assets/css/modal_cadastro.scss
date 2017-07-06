@@ -10,6 +10,7 @@ and open the template in the editor.
 $borda-modal:#b7b7b7;
 $fonte-geral:'Open Sans', sans-serif;
 $cor_fonte_modal:#116961;
+$tamanho_inputs:32px;
 
 
 .geral_modal
@@ -17,8 +18,8 @@ $cor_fonte_modal:#116961;
     display:none;
     width: 40%;
     min-width: 400px; 
-    top: 22%;
-    left: 30%;
+    top: 24%;
+    left: 29%;
     position: absolute;
     z-index: 9999; /* número máximo é 9999 */
 
@@ -36,7 +37,7 @@ $cor_fonte_modal:#116961;
             font-family:$fonte-geral;
             font-size: 25px;
             color:$cor_fonte_modal;
-             padding-bottom: 3%;
+             padding-bottom: 1%;
 
             //border-bottom: solid 1px $borda-modal; 
 
@@ -57,18 +58,18 @@ $cor_fonte_modal:#116961;
             .ipt-modal-nome
             {
                 width: 70%;
-                height: 37px;
+                height: $tamanho_inputs;
             }
             .ipt-modal-email
             {
                 width: 50%;
-                height: 37px;
+                height:$tamanho_inputs;
                 margin-right: 19%;
             }
             .ipt-modal-senha
             {
                 width: 45%;
-                height: 37px;
+                height: $tamanho_inputs;
             }
         }
 
@@ -77,8 +78,8 @@ $cor_fonte_modal:#116961;
             display:table;
             width:86%;
             height:50px;
-            margin-top: 4%;
-            margin-bottom:1%;
+            margin-top: 2%;
+          
 
 
             .btn-done
