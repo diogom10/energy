@@ -4,6 +4,16 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
+    Created on : 06/07/2017, 11:05:20
+    Author     : user1
+*/
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
     Created on : 03/07/2017, 11:21:03
     Author     : user1
 */
@@ -12,76 +22,66 @@ $fonte-geral:'Open Sans', sans-serif;
 $cor_fonte_modal:#116961;
 
 
-.geral_modal
+.geral_modal_senha
 {
     display:none;
-    width: 40%;
+    width: 25%;
     min-width: 400px; 
-    top: 22%;
-    left: 30%;
+    top: 31%;
+    left: 36%;
     position: absolute;
     z-index: 9999; /* número máximo é 9999 */
 
-    .visual_modal{
 
+
+    .visual_modal_senha
+    {
         background-color: #ffffff;
         width: 100%;
         height: 100%;
         border: solid 1px $borda-modal;
         border-radius:9px;
 
-        .header-cadastro
+        .header-senha
         {
             text-align:center;
             font-family:$fonte-geral;
             font-size: 25px;
             color:$cor_fonte_modal;
-             padding-bottom: 3%;
-
-            //border-bottom: solid 1px $borda-modal; 
-
+            padding-bottom: 3%;
         }
-        .section-cadastro
+
+        .section-senha
         {
             position:relative;
             left:4%; 
 
-            .ipt-geral-modal
+            .ipt-geral-modal-senha
             {
-                margin-top:1%;
+
                 font-size: 15px;
                 font-family:$fonte-geral; 
                 margin-top: 4px;
-                
+                margin-left: 10%;
+
             }
-            .ipt-modal-nome
+            .ipt-modal-remail
             {
                 width: 70%;
                 height: 37px;
-            }
-            .ipt-modal-email
-            {
-                width: 50%;
-                height: 37px;
-                margin-right: 19%;
-            }
-            .ipt-modal-senha
-            {
-                width: 45%;
-                height: 37px;
+                text-align: center;
             }
         }
 
-        .footer-cadastro
+        .footer-senha
         {
-            display:table;
+
             width:86%;
             height:50px;
             margin-top: 4%;
             margin-bottom:1%;
 
-
-            .btn-done
+            .btn-done-senha
             {
 
                 width:25%;
@@ -91,7 +91,7 @@ $cor_fonte_modal:#116961;
                 left:45%;
                 border-radius:6px;
 
-                .text-btn-done
+                .text-btn-done-senha
                 {
                     font-family: $fonte-geral;
                     color:#ffffff;
@@ -101,7 +101,7 @@ $cor_fonte_modal:#116961;
                 }
             }
 
-            .btn-done:hover
+            .btn-done-senha:hover
                 {
                 background-color:#3b7ab1;
                 cursor:pointer;
@@ -109,7 +109,9 @@ $cor_fonte_modal:#116961;
             }
         }
 
+
     }
+
 }
 
 

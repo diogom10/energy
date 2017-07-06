@@ -6,6 +6,7 @@
 
         <link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>assets/css/login.css"/>
         <link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>assets/css/modal_cadastro.css"/>
+        <link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>assets/css/modal_senha.css"/>
         <script  src="<?php echo base_url(); ?>assets/js/jquery-3.2.1.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -57,6 +58,7 @@
                 </div>
 
                 <?php $this->load->view('modal/cadastro_view.php'); ?>
+                <?php $this->load->view('modal/senha_view.php'); ?>
 
 
             </div>

@@ -5,68 +5,70 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
+    Created on : 06/07/2017, 11:05:20
+    Author     : user1
+*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
     Created on : 03/07/2017, 11:21:03
     Author     : user1
 */
-.geral_modal {
+.geral_modal_senha {
   display: none;
-  width: 40%;
+  width: 25%;
   min-width: 400px;
-  top: 22%;
-  left: 30%;
+  top: 31%;
+  left: 36%;
   position: absolute;
   z-index: 9999;
   /* n├║mero m├íximo ├® 9999 */ }
-  .geral_modal .visual_modal {
+  .geral_modal_senha .visual_modal_senha {
     background-color: #ffffff;
     width: 100%;
     height: 100%;
     border: solid 1px #b7b7b7;
     border-radius: 9px; }
-    .geral_modal .visual_modal .header-cadastro {
+    .geral_modal_senha .visual_modal_senha .header-senha {
       text-align: center;
       font-family: "Open Sans", sans-serif;
       font-size: 25px;
       color: #116961;
       padding-bottom: 3%; }
-    .geral_modal .visual_modal .section-cadastro {
+    .geral_modal_senha .visual_modal_senha .section-senha {
       position: relative;
       left: 4%; }
-      .geral_modal .visual_modal .section-cadastro .ipt-geral-modal {
-        margin-top: 1%;
+      .geral_modal_senha .visual_modal_senha .section-senha .ipt-geral-modal-senha {
         font-size: 15px;
         font-family: "Open Sans", sans-serif;
-        margin-top: 4px; }
-      .geral_modal .visual_modal .section-cadastro .ipt-modal-nome {
+        margin-top: 4px;
+        margin-left: 10%; }
+      .geral_modal_senha .visual_modal_senha .section-senha .ipt-modal-remail {
         width: 70%;
-        height: 37px; }
-      .geral_modal .visual_modal .section-cadastro .ipt-modal-email {
-        width: 50%;
         height: 37px;
-        margin-right: 19%; }
-      .geral_modal .visual_modal .section-cadastro .ipt-modal-senha {
-        width: 45%;
-        height: 37px; }
-    .geral_modal .visual_modal .footer-cadastro {
-      display: table;
+        text-align: center; }
+    .geral_modal_senha .visual_modal_senha .footer-senha {
       width: 86%;
       height: 50px;
       margin-top: 4%;
       margin-bottom: 1%; }
-      .geral_modal .visual_modal .footer-cadastro .btn-done {
+      .geral_modal_senha .visual_modal_senha .footer-senha .btn-done-senha {
         width: 25%;
         padding: 10px 0;
         background-color: #428bca;
         position: relative;
         left: 45%;
         border-radius: 6px; }
-        .geral_modal .visual_modal .footer-cadastro .btn-done .text-btn-done {
+        .geral_modal_senha .visual_modal_senha .footer-senha .btn-done-senha .text-btn-done-senha {
           font-family: "Open Sans", sans-serif;
           color: #ffffff;
           text-align: center;
           position: relative; }
-      .geral_modal .visual_modal .footer-cadastro .btn-done:hover {
+      .geral_modal_senha .visual_modal_senha .footer-senha .btn-done-senha:hover {
         background-color: #3b7ab1;
         cursor: pointer; }
 
-/*# sourceMappingURL=modal_cadastro.css.map */
+/*# sourceMappingURL=modal_senha.css.map */

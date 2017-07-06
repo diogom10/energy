@@ -11,8 +11,18 @@ $(document).ready(function () {
  
     $(".masc").on("click", function () {
         
+        $(".geral_modal_senha").hide();  
         $(".geral_modal").hide();  
         $(this).hide();
         
     });
+    
+    $(".senha").on("click", function () {
+        
+        $(".geral_modal_senha").show();  
+        $(".masc").show();
+    });
+ 
+    
+    
 });

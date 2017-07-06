@@ -45,7 +45,7 @@ body {
   width: 25%;
   min-width: 300px; }
   .login .p_corpo_inputs {
-    border: solid 1px #efecec;
+    border: solid 1px #d6c4c4;
     border-radius: 10px;
     background-color: #ffffff; }
     .login .p_corpo_inputs .p_inputs {
@@ -82,7 +82,7 @@ body {
       text-align: center; }
     .login .p_corpo_inputs .sub-title {
       font-size: 13px;
-      border-bottom: solid 1px #efecec;
+      border-bottom: solid 1px #d6c4c4;
       margin-top: 2%; }
     .login .p_corpo_inputs .title_inputs {
       font-size: 16px;
