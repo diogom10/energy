@@ -10,7 +10,7 @@ and open the template in the editor.
 $borda-modal:#b7b7b7;
 $fonte-geral:'Open Sans', sans-serif;
 $cor_fonte_modal:#116961;
-$tamanho_inputs:32px;
+$tamanho_inputs:34px;
 
 
 .geral_modal
@@ -37,7 +37,7 @@ $tamanho_inputs:32px;
             font-family:$fonte-geral;
             font-size: 25px;
             color:$cor_fonte_modal;
-             padding-bottom: 1%;
+            padding-bottom: 1%;
 
             //border-bottom: solid 1px $borda-modal; 
 
@@ -53,7 +53,8 @@ $tamanho_inputs:32px;
                 font-size: 15px;
                 font-family:$fonte-geral; 
                 margin-top: 4px;
-                
+
+
             }
             .ipt-modal-nome
             {
@@ -66,11 +67,18 @@ $tamanho_inputs:32px;
                 height:$tamanho_inputs;
                 margin-right: 19%;
             }
-            .ipt-modal-senha
+            .ipt-modal-senha  
+
             {
                 width: 45%;
                 height: $tamanho_inputs;
             }
+            .ipt-modal-senha2 
+            {
+                width: 45%;
+                height: $tamanho_inputs;
+            }
+
         }
 
         .footer-cadastro
@@ -78,8 +86,60 @@ $tamanho_inputs:32px;
             display:table;
             width:86%;
             height:50px;
-            margin-top: 2%;
-          
+            margin-top: 1%;
+
+            .err-geral
+            {
+                font-family: $fonte-geral;
+                color:#c73030;
+                padding: 0% 0% 1% 44%;
+                position: relative;
+                font-size: 12px;
+
+            }
+
+            .err-senha
+            {
+                display: none;
+
+            }
+
+            .err-senha2
+            {
+                display: none;
+
+            }
+
+            .err-nome
+            {
+                display: none;
+
+            }
+
+            .err-nome2
+            {
+                display: none;
+
+            }
+
+            .err-nome3
+            {
+                display: none;
+
+            }
+
+            .err-email
+            {
+                display: none;
+
+            }
+
+            .err-email2
+            {
+                display: none;
+
+            }
+
 
 
             .btn-done
@@ -91,6 +151,7 @@ $tamanho_inputs:32px;
                 position: relative;
                 left:45%;
                 border-radius:6px;
+                margin-bottom: 1%;
 
                 .text-btn-done
                 {
