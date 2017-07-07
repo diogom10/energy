@@ -48,7 +48,7 @@ $(document).ready(function () {
         var name = $(".ipt-modal-nome").val();
         var email = $(".ipt-modal-email").val();
         var password = $(".ipt-modal-senha").val();
-<<<<<<< HEAD
+
         var password2 = $(".ipt-modal-senha2").val();
     
 
@@ -106,8 +106,8 @@ $(document).ready(function () {
 
 
         //validação campo senha//////////////////////////////////////
-        //var senhaValida = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/;
-        var senhaValida = "^(?=.*\d)(?=.*[a-zA-Z])(?!.*[\W_\x7B-\xFF]).{4,15}$";
+       var senhaValida = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/;
+       // var senhaValida = "^(?=.*\d)(?=.*[a-zA-Z])(?!.*[\W_\x7B-\xFF]).{4,15}$";
         
         if (password !== password2)
         {
@@ -157,7 +157,7 @@ $(document).ready(function () {
             });
             
         
-        
+
         $(".geral_modal_senha").fadeOut();
         $(".geral_modal").hide();
         $(".ipt-modal-nome").val("");
@@ -177,29 +177,15 @@ $(document).ready(function () {
         $(".err-nome3").hide();
         $(".err-email2").hide();
         $(".masc").fadeOut();
-
+       
         }
 
         return false;
 
     });
 
-=======
 
-        var dados = ";" + name + ";" + email + ";" + password;
-        
-         $.ajax({
-         type: 'post',
-         url: base_url+"Sigere/Inserir/"+dados,
-         data: true,
-         success: function(data){
-        
-                                
-        }    
-        });
-         return false;
-         
+
+                
     });
 
->>>>>>> refs/remotes/origin/master
-});
