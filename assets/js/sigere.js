@@ -27,14 +27,23 @@ $(document).ready(function () {
 
 
     $(".btn-done").on("click", function () {
-     var name = $(".ipt-modal-nome").val();
-     var email = $(".ipt-modal-email").val();
-     var password = $(".ipt-modal-senha").val();
-     
-     console.log("Nome: "+name);
-     console.log("Email: "+email);
-     console.log("Password: "+password);
-    });
+        var name = $(".ipt-modal-nome").val();
+        var email = $(".ipt-modal-email").val();
+        var password = $(".ipt-modal-senha").val();
 
+        var dados = ";" + name + ";" + email + ";" + password;
+        
+         $.ajax({
+         type: 'post',
+         url: base_url+"Sigere/Inserir/"+dados,
+         data: true,
+         success: function(data){
+        
+                                
+        }    
+        });
+         return false;
+         
+    });
 
 });

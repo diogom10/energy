@@ -40,8 +40,8 @@ body {
   opacity: 0.4; }
 
 .login {
-  margin-left: 36%;
-  margin-top: 7%;
+  padding-left: 38%;
+  padding-top: 7%;
   width: 25%;
   min-width: 300px; }
   .login .p_corpo_inputs {

@@ -16,5 +16,9 @@ class Sigere extends CI_Controller {
         $this->load->view('login_view.php', $data);
         //$this->load->view('home_view.php', $data);
     }
+    
+    public function inserir($dados) {
+        var_dump($dados);
+    }
 
 }
