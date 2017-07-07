@@ -48,6 +48,7 @@ $(document).ready(function () {
         var name = $(".ipt-modal-nome").val();
         var email = $(".ipt-modal-email").val();
         var password = $(".ipt-modal-senha").val();
+<<<<<<< HEAD
         var password2 = $(".ipt-modal-senha2").val();
     
 
@@ -183,4 +184,22 @@ $(document).ready(function () {
 
     });
 
+=======
+
+        var dados = ";" + name + ";" + email + ";" + password;
+        
+         $.ajax({
+         type: 'post',
+         url: base_url+"Sigere/Inserir/"+dados,
+         data: true,
+         success: function(data){
+        
+                                
+        }    
+        });
+         return false;
+         
+    });
+
+>>>>>>> refs/remotes/origin/master
 });
