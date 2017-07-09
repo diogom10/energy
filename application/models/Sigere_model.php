@@ -1,7 +1,6 @@
 <?php
 
-if (!defined('BASEPATH'))
-    exit('No direct script access allowed');
+defined('BASEPATH') OR exit('No direct script access allowed');
 
 Class Sigere_model extends CI_Model {
 
@@ -9,10 +8,19 @@ Class Sigere_model extends CI_Model {
         
     }
 
-    public function cadastrar($dados) {
-        
+    public function inserir($dados) {
+
+
+        $this->db->insert('usuario', $dados);
+
     }
 
-}
+        public function cadastrar($dados) {
+            
+        }
+
+    }
+
+
 ?>
 

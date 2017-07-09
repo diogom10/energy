@@ -39,26 +39,50 @@ and open the template in the editor.
         margin-top: 4px; }
       .geral_modal .visual_modal .section-cadastro .ipt-modal-nome {
         width: 70%;
-        height: 32px; }
+        height: 34px; }
       .geral_modal .visual_modal .section-cadastro .ipt-modal-email {
         width: 50%;
-        height: 32px;
+        height: 34px;
         margin-right: 19%; }
       .geral_modal .visual_modal .section-cadastro .ipt-modal-senha {
         width: 45%;
-        height: 32px; }
+        height: 34px; }
+      .geral_modal .visual_modal .section-cadastro .ipt-modal-senha2 {
+        width: 45%;
+        height: 34px; }
     .geral_modal .visual_modal .footer-cadastro {
       display: table;
       width: 86%;
       height: 50px;
-      margin-top: 2%; }
+      margin-top: 1%; }
+      .geral_modal .visual_modal .footer-cadastro .err-geral {
+        font-family: "Open Sans", sans-serif;
+        color: #c73030;
+        padding: 0% 0% 1% 44%;
+        position: relative;
+        font-size: 12px; }
+      .geral_modal .visual_modal .footer-cadastro .err-senha {
+        display: none; }
+      .geral_modal .visual_modal .footer-cadastro .err-senha2 {
+        display: none; }
+      .geral_modal .visual_modal .footer-cadastro .err-nome {
+        display: none; }
+      .geral_modal .visual_modal .footer-cadastro .err-nome2 {
+        display: none; }
+      .geral_modal .visual_modal .footer-cadastro .err-nome3 {
+        display: none; }
+      .geral_modal .visual_modal .footer-cadastro .err-email {
+        display: none; }
+      .geral_modal .visual_modal .footer-cadastro .err-email2 {
+        display: none; }
       .geral_modal .visual_modal .footer-cadastro .btn-done {
         width: 25%;
         padding: 10px 0;
         background-color: #428bca;
         position: relative;
         left: 45%;
-        border-radius: 6px; }
+        border-radius: 6px;
+        margin-bottom: 1%; }
         .geral_modal .visual_modal .footer-cadastro .btn-done .text-btn-done {
           font-family: "Open Sans", sans-serif;
           color: #ffffff;
