@@ -16,25 +16,35 @@ class Sigere extends CI_Controller {
         $this->load->view('login_view.php', $data);
         //$this->load->view('home_view.php', $data);
     }
-    
+
     public function validador() {
+        $semente = "##123sigere";
+        $retorno_json = [];
         
-        
-         $data = array(
+        $data = array(
             "nome" => $this->input->Post("name"),
             "email" => $this->input->Post("email"),
-            "senha" => md5($this->input->Post("pwd").$semente),
+            "senha" => md5($this->input->Post("pwd") . $semente),
         );
-         
-         $this->cadastrar($data);
+
+        $valida = $this->model->validar($data);
+
+        if ($valida == 0) {
+            $this->cadastrar($data);
+            $retorno_json['existe_erro'] = false;
+          
+        } else {
+            $retorno_json['existe_erro'] = true;
+            $retorno_json['mensagem'] = "*Ja Existe um usuario com Esse Email";
+
+            
+        }
+        echo json_encode($retorno_json);
     }
 
     public function cadastrar($dados) {
-        $semente = "##123sigere";
-        
-       
-        
-          $this->model->inserir($dados);
+
+        $this->model->inserir($dados);
     }
 
 }

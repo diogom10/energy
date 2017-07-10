@@ -20,7 +20,7 @@
              <div class="err-email2 err-geral">*Campo Email Obrigatorio</div>
             <div class="err-senha err-geral">*Senhas Não Coincidem</div>
             <div class="err-senha2 err-geral">*Minimimo Aceito 6 Caracteres, com 1 Letra Maiuscula e 1 Numero</div>
-              <div class="err-php err-geral"></div>
+            <div class="err-php err-geral">*teste</div>
             <div class="sucesso-cadastro">
                 <img class="sucesso-imagem" src="<?php echo base_url()?>assets/images/certo.png" />
             </div>
