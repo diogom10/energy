@@ -13,6 +13,7 @@ $cor_fonte_modal:#116961;
 $tamanho_inputs:34px;
 
 
+
 .geral_modal
 {
     display:none;
@@ -139,7 +140,11 @@ $tamanho_inputs:34px;
                 display: none;
 
             }
+            .err-php
+            {
+                display: none;
 
+            }
 
 
             .btn-done
@@ -169,6 +174,50 @@ $tamanho_inputs:34px;
                 cursor:pointer;
 
             }
+        }
+
+        .sucesso-cadastro
+        {
+            width: 31%;
+            margin-bottom: 2%;
+            margin-top: 2%;
+            position: relative;
+            left: 42%;
+            display:none;
+
+
+            .sucesso-imagem
+            {
+                background-repeat: no-repeat;
+                width:100%; 
+
+
+            }
+        }
+
+        .btn-voltar
+        {   
+            display:none;
+            width: 25%;
+            padding: 10px 0;
+            background-color: #428bca;
+            position: relative;
+            left: 45%;
+            border-radius: 6px;
+            margin-bottom: 1%;
+            .text-btn-voltar
+            {
+                font-family:$fonte-geral;
+                color: #ffffff;
+                text-align: center;
+                position: relative;
+            }
+        }
+        .btn-voltar:hover
+            {
+            background-color:#3b7ab1;
+            cursor:pointer;
+
         }
 
     }

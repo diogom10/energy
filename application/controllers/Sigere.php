@@ -17,20 +17,24 @@ class Sigere extends CI_Controller {
         //$this->load->view('home_view.php', $data);
     }
     
-    public function inserir($dados) {
-        var_dump($dados);
-    }
-
-    public function cadastrar() {
-        $semente = "##123sigere";
+    public function validador() {
         
-        $data = array(
+        
+         $data = array(
             "nome" => $this->input->Post("name"),
             "email" => $this->input->Post("email"),
             "senha" => md5($this->input->Post("pwd").$semente),
         );
+         
+         $this->cadastrar($data);
+    }
+
+    public function cadastrar($dados) {
+        $semente = "##123sigere";
         
-          $this->model->inserir($data);
+       
+        
+          $this->model->inserir($dados);
     }
 
 }

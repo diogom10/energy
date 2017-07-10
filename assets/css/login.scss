@@ -15,10 +15,11 @@ $fonte-inputs-tamanho:15px;
 
 .login
 { 
-    padding-left: 38%;
-    padding-top: 7%;
     width: 25%;
     min-width: 300px;
+    position: relative;
+    left: 36%;
+    top:16%;
 
     .p_corpo_inputs
     {

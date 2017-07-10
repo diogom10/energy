@@ -75,6 +75,8 @@ and open the template in the editor.
         display: none; }
       .geral_modal .visual_modal .footer-cadastro .err-email2 {
         display: none; }
+      .geral_modal .visual_modal .footer-cadastro .err-php {
+        display: none; }
       .geral_modal .visual_modal .footer-cadastro .btn-done {
         width: 25%;
         padding: 10px 0;
@@ -91,5 +93,32 @@ and open the template in the editor.
       .geral_modal .visual_modal .footer-cadastro .btn-done:hover {
         background-color: #3b7ab1;
         cursor: pointer; }
+    .geral_modal .visual_modal .sucesso-cadastro {
+      width: 31%;
+      margin-bottom: 2%;
+      margin-top: 2%;
+      position: relative;
+      left: 42%;
+      display: none; }
+      .geral_modal .visual_modal .sucesso-cadastro .sucesso-imagem {
+        background-repeat: no-repeat;
+        width: 100%; }
+    .geral_modal .visual_modal .btn-voltar {
+      display: none;
+      width: 25%;
+      padding: 10px 0;
+      background-color: #428bca;
+      position: relative;
+      left: 45%;
+      border-radius: 6px;
+      margin-bottom: 1%; }
+      .geral_modal .visual_modal .btn-voltar .text-btn-voltar {
+        font-family: "Open Sans", sans-serif;
+        color: #ffffff;
+        text-align: center;
+        position: relative; }
+    .geral_modal .visual_modal .btn-voltar:hover {
+      background-color: #3b7ab1;
+      cursor: pointer; }
 
 /*# sourceMappingURL=modal_cadastro.css.map */

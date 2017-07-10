@@ -20,7 +20,8 @@ body {
       color: #ffffff;
       margin-left: 45%; }
   body .section {
-    width: 100%; }
+    width: 100%;
+    height: 815px; }
   body .footer {
     width: 100%;
     height: 80px;
@@ -40,10 +41,11 @@ body {
   opacity: 0.4; }
 
 .login {
-  padding-left: 38%;
-  padding-top: 7%;
   width: 25%;
-  min-width: 300px; }
+  min-width: 300px;
+  position: relative;
+  left: 36%;
+  top: 16%; }
   .login .p_corpo_inputs {
     border: solid 1px #d6c4c4;
     border-radius: 10px;
