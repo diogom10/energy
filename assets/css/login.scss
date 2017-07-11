@@ -15,10 +15,11 @@ $fonte-inputs-tamanho:15px;
 
 .login
 { 
-    padding-left: 38%;
-    padding-top: 7%;
     width: 25%;
     min-width: 300px;
+    position: relative;
+    left: 36%;
+    top:16%;
 
     .p_corpo_inputs
     {
@@ -125,12 +126,50 @@ $fonte-inputs-tamanho:15px;
 
         .f_login
         {
-            display:table;
-            width:100%;
-            font-family:$fonte_inputs;
+            display: table;
+            width: 100%;
+            font-family: "Open Sans", sans-serif;
             font-size: 13px;
-            margin-top: 7%;
+            margin-top: 4%;//era 2
             margin-bottom: 1%;
+
+
+
+            .err-login-geral
+            {
+                font-family: "Open Sans", sans-serif;
+                color: #c73030;
+                text-align: center;
+                font-size: 12px;
+
+            }
+            
+            #err-login-email
+            {
+                display: none;
+            }
+            
+             #err-login-email2
+            {
+                display: none;
+            }
+
+            
+            #err-login-email-php
+            {
+                display: none;
+            }
+            
+            #err-login-senha
+            {
+                display: none;
+            }
+            
+            #err-login-senha-php
+            {
+                display: none;
+            }
+
 
             .cadastro
             {

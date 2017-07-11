@@ -13,6 +13,7 @@ $cor_fonte_modal:#116961;
 $tamanho_inputs:34px;
 
 
+
 .geral_modal
 {
     display:none;
@@ -45,7 +46,9 @@ $tamanho_inputs:34px;
         .section-cadastro
         {
             position:relative;
-            left:4%; 
+            width: 90%;
+            margin-left: 4%;
+            margin-right: 4%;
 
             .ipt-geral-modal
             {
@@ -53,32 +56,39 @@ $tamanho_inputs:34px;
                 font-size: 15px;
                 font-family:$fonte-geral; 
                 margin-top: 4px;
-
+                padding: 1px;
 
             }
             .ipt-modal-nome
             {
-                width: 70%;
+                width: 99.2%;
                 height: $tamanho_inputs;
             }
             .ipt-modal-email
             {
-                width: 50%;
+                width: 99.2%;
                 height:$tamanho_inputs;
                 margin-right: 19%;
-            }
-            .ipt-modal-senha  
 
-            {
-                width: 45%;
-                height: $tamanho_inputs;
             }
-            .ipt-modal-senha2 
-            {
-                width: 45%;
-                height: $tamanho_inputs;
-            }
+            .controle-senha{
+                display:flex;
+                .ipt-modal-senha  
 
+                {
+                    float:left;
+                    width: 50%;
+                    height: $tamanho_inputs;
+                }
+                .ipt-modal-senha2 
+                {
+                    margin-left: 1%;
+                    float: left;
+                    width: 50%;
+
+                    height: $tamanho_inputs;
+                }
+            }
         }
 
         .footer-cadastro
@@ -98,48 +108,52 @@ $tamanho_inputs:34px;
 
             }
 
-            .err-senha
+            #err-senha
             {
                 display: none;
 
             }
 
-            .err-senha2
+            #err-senha2
             {
                 display: none;
 
             }
 
-            .err-nome
+            #err-nome
             {
                 display: none;
 
             }
 
-            .err-nome2
+            #err-nome2
             {
                 display: none;
 
             }
 
-            .err-nome3
+            #err-nome3
             {
                 display: none;
 
             }
 
-            .err-email
+            #err-email
             {
                 display: none;
 
             }
 
-            .err-email2
+            #err-email2
             {
                 display: none;
 
             }
+            #err-php
+            {
+                display: none;
 
+            }
 
 
             .btn-done
@@ -169,6 +183,50 @@ $tamanho_inputs:34px;
                 cursor:pointer;
 
             }
+        }
+
+        .sucesso-cadastro
+        {
+            width: 31%;
+            margin-bottom: 2%;
+            margin-top: 2%;
+            position: relative;
+            left: 42%;
+            display:none;
+
+
+            .sucesso-imagem
+            {
+                background-repeat: no-repeat;
+                width:100%; 
+
+
+            }
+        }
+
+        .btn-voltar
+        {   
+            display:none;
+            width: 25%;
+            padding: 10px 0;
+            background-color: #428bca;
+            position: relative;
+            left: 45%;
+            border-radius: 6px;
+            margin-bottom: 1%;
+            .text-btn-voltar
+            {
+                font-family:$fonte-geral;
+                color: #ffffff;
+                text-align: center;
+                position: relative;
+            }
+        }
+        .btn-voltar:hover
+            {
+            background-color:#3b7ab1;
+            cursor:pointer;
+
         }
 
     }
