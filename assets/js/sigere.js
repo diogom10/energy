@@ -147,7 +147,7 @@ $(document).ready(function () {
             
             $.ajax({
                 type: 'Post',
-                url: base_url + "Sigere/cadastrar",
+                url: base_url + "Sigere/Cadastrar",
                 data: {name: name, email: email, pwd: password},
                 success: function (res) {
                              
