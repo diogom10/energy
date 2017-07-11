@@ -50,6 +50,11 @@
 
 
                         <div class="f_login">
+                            <div id="err-login-email" class="err-login-geral">*Campo Email Vazio</div>
+                            <div id="err-login-email2" class="err-login-geral">*Formato de Email Invalido</div>
+                            <div id="err-login-email-php" class="err-login-geral"></div>
+                            <div id="err-login-senha" class="err-login-geral">*Campo Senha Vazio</div>
+                            <div id="err-login-senha-php" class="err-login-geral"></div>
                             <div class="cadastro">Ainda não é cadastrado?</div>
                             <div class="senha">Esqueceu a Senha?</div>
                         </div>

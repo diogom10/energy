@@ -12,8 +12,7 @@ body {
   margin: 0 auto; }
   body .header {
     background-color: #009688;
-    width: 100%;
-    height: 80px; }
+    width: 100%; }
     body .header .title {
       font-family: 'Open Sans', sans-serif;
       font-size: 40px;
@@ -97,8 +96,23 @@ body {
       width: 100%;
       font-family: "Open Sans", sans-serif;
       font-size: 13px;
-      margin-top: 7%;
+      margin-top: 4%;
       margin-bottom: 1%; }
+      .login .p_corpo_inputs .f_login .err-login-geral {
+        font-family: "Open Sans", sans-serif;
+        color: #c73030;
+        text-align: center;
+        font-size: 12px; }
+      .login .p_corpo_inputs .f_login #err-login-email {
+        display: none; }
+      .login .p_corpo_inputs .f_login #err-login-email2 {
+        display: none; }
+      .login .p_corpo_inputs .f_login #err-login-email-php {
+        display: none; }
+      .login .p_corpo_inputs .f_login #err-login-senha {
+        display: none; }
+      .login .p_corpo_inputs .f_login #err-login-senha-php {
+        display: none; }
       .login .p_corpo_inputs .f_login .cadastro {
         margin-left: 1%;
         float: left;
