@@ -33,7 +33,11 @@ Class Sigere_model extends CI_Model {
 
     public function valida_login($dados) {
         $retorno = 0;
-        $this->db->select('email,senha');
+        $resposta = array(
+            "json" => 0,
+            "nome_login" => 'default'
+        );
+        $this->db->select('email,senha,nome');
         $this->db->where('email', $dados['email']);
         $query = $this->db->get('usuario')->result();
 
@@ -42,16 +46,18 @@ Class Sigere_model extends CI_Model {
             if ($login->email == $dados['email']) {
 
                 if ($login->senha == $dados['senha']) {
-
-                    $retorno = 2; //senha e login corretos
+                    
+                    $resposta["json"] = 2;
+                    $resposta["nome_login"] = $login->nome ;
+                    
                 } else {
-                    $retorno = 1; //senha incorreta
+                    $resposta["json"] = 1; //senha incorreta
                 }
             } else {
-                $retorno = 0; //email incorreto    
+                 $resposta["json"] = 0; //email incorreto    
             }
         }
-        return $retorno;
+        return $resposta;
     }
 
 }

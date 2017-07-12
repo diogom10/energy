@@ -27,7 +27,7 @@
             </div>
 
         <div class="section">
-            Seja bem vindo Diogo
+            Seja bem vindo<div class="boas"></div>
         </div>
 
               <div class="footer"></div>
