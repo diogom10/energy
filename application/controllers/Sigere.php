@@ -9,7 +9,7 @@ class Sigere extends CI_Controller {
         parent:: __construct();
         $this->load->library('session');
         $this->load->model('Sigere_model', 'model', TRUE);
-         $this->load->helper('url'); 
+        $this->load->helper('url');
     }
 
     public function index() {
@@ -19,10 +19,12 @@ class Sigere extends CI_Controller {
         $this->load->view('login_view.php', $data);
     }
 
+    
     public function home_view() {
-         $data['title'] = "Sigere";
+        $data['title'] = "Sigere";
         $this->load->view('home_view.php', $data);
     }
+    
 
     public function validador_cadastro() {
 
@@ -48,20 +50,22 @@ class Sigere extends CI_Controller {
         echo json_encode($retorno_cadastro);
     }
 
+    
     public function cadastrar($dados) {
 
         $this->model->inserir($dados);
     }
+    
+    
 
     public function validador_login() {
+        $dados_sessao = 0;
 
         $dados_login = array(
             "email" => $this->input->Post("email_login"),
             "senha" => md5($this->input->Post("pwd_login") . HASH),
         );
-
         $retorno_login = [];
-
         $valida = $this->model->valida_login($dados_login);
 
         if ($valida['json'] == 0) {
@@ -73,9 +77,14 @@ class Sigere extends CI_Controller {
         } else {
             $retorno_login['existe_erro'] = "valido";
             $retorno_login['usuario'] = $valida["nome_login"];
-            
+            $usuario = explode(' ', $valida["nome_login"]);
+            $dados_sessao = array(
+                'nome_de_usuario' => $usuario[0] . " " . $usuario[1],
+                'email' => $dados_login['email'],
+                'logged_in' => TRUE
+            );
+            $this->session->set_userdata($dados_sessao);
         }
-
         echo json_encode($retorno_login);
     }
 

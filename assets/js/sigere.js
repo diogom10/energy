@@ -347,8 +347,7 @@ $(document).ready(function () {
         if (validador === 2) {
 
 
-            console.log("tudo ok JS");
-            console.log(validador);
+     
             $.ajax({
                 type: 'Post',
                 url: base_url + "Sigere/validador_login",
@@ -378,14 +377,15 @@ $(document).ready(function () {
                 
                 else
                 {
-                    window.location.replace("http://localhost/energia/index.php/Sigere/home_view");
-                    alert("usuario:: "+retorno_login.usuario);
-                    $(".boas").html(retorno_login.usuario);
+                    window.location.href='http://localhost/energia/index.php/Sigere/home_view';
+                    console.log("usuario:: "+retorno_login.usuario);
+                  
                 }
             });
         }
+            return false;
     });
 
-    return false;
+
 });
 
