@@ -7,29 +7,27 @@ class Sigere extends CI_Controller {
     public function __construct() {
 
         parent:: __construct();
+        $this->load->library('session');
         $this->load->model('Sigere_model', 'model', TRUE);
+         $this->load->helper('url'); 
     }
 
     public function index() {
+
         $this->load->helper('form');
         $data['title'] = "Sigere";
         $this->load->view('login_view.php', $data);
-        //$this->load->view('home_view.php', $data);
-<<<<<<< HEAD
-    
     }
-    public function cadastrar() {
-        $semente = "##123sigere";
-        
-        $data = array(
-=======
+
+    public function home_view() {
+         $data['title'] = "Sigere";
+        $this->load->view('home_view.php', $data);
     }
 
     public function validador_cadastro() {
 
 
         $dados_cadastro = array(
->>>>>>> c0d284981c6bdc3f17da362f0ed8f6f5ea2ba4fd
             "nome" => $this->input->Post("name"),
             "email" => $this->input->Post("email"),
             "senha" => md5($this->input->Post("pwd") . HASH),
@@ -66,18 +64,19 @@ class Sigere extends CI_Controller {
 
         $valida = $this->model->valida_login($dados_login);
 
-        if ($valida == 0) {
+        if ($valida['json'] == 0) {
             $retorno_login['existe_erro'] = "email";
             $retorno_login['mensagem'] = "*Email Não Encontrado";
-        } else if ($valida == 1) {
-           $retorno_login['existe_erro'] = "senha";
+        } else if ($valida['json'] == 1) {
+            $retorno_login['existe_erro'] = "senha";
             $retorno_login['mensagem'] = "*Senha Incorreta";
         } else {
             $retorno_login['existe_erro'] = "valido";
-          
+            $retorno_login['usuario'] = $valida["nome_login"];
+            
         }
-        
-         echo json_encode($retorno_login);
+
+        echo json_encode($retorno_login);
     }
 
 }
