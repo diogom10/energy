@@ -17,16 +17,22 @@ body {
       font-family: 'Open Sans', sans-serif;
       font-size: 40px;
       color: #ffffff;
-      margin-left: 45%; }
+      text-align: center; }
   body .section {
     width: 100%;
     height: 815px; }
   body .footer {
     width: 100%;
-    height: 80px;
+    padding-top: 1%;
+    padding-bottom: 1%;
     background-color: #009688;
     position: fixed;
     bottom: 0%; }
+    body .footer .f-text .f-text-geral {
+      text-align: center;
+      font-family: "Open Sans", sans-serif;
+      font-size: 12px;
+      color: #ffffff; }
 
 .masc {
   width: 100%;

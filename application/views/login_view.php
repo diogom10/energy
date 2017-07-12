@@ -20,9 +20,10 @@
     </head>
     <body>
         <div class="masc"></div>
+       
 
-      
             <div class="header">
+               
                 <div class="title">SIGERE</div>
             </div>
 
@@ -68,8 +69,15 @@
 
             </div>
 
-            <div class="footer"></div>
-       
+            <div class="footer">
+                <div class="f-text">
+                    <div class="f-text-geral">@2017 Sigere.com | Todos os direitos reservados</div>
+                    <div class="f-text-geral">É proibida a reprodução total ou parcial de qualquer conteudo deste site</div>
+                </div>
+            </div>
+
+      
+
     </body>
 
 
