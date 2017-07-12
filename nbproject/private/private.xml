@@ -3,24 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-<<<<<<< HEAD
             <file>file:/C:/wamp64/www/energia/assets/js/sigere.js</file>
             <file>file:/C:/wamp64/www/energia/application/views/home_view.php</file>
             <file>file:/C:/wamp64/www/energia/application/controllers/Sigere.php</file>
             <file>file:/C:/wamp64/www/energia/application/views/modal/cadastro_view.php</file>
             <file>file:/C:/wamp64/www/energia/assets/css/login.scss</file>
             <file>file:/C:/wamp64/www/energia/application/models/Sigere_model.php</file>
-=======
-            <file>file:/C:/wamp64/www/energia/application/models/Sigere_model.php</file>
-            <file>file:/C:/wamp64/www/energia/assets/css/login.scss</file>
-            <file>file:/C:/wamp64/www/energia/application/views/home_view.php</file>
-            <file>file:/C:/wamp64/www/energia/application/views/modal/cadastro_view.php</file>
-            <file>file:/C:/wamp64/www/energia/assets/css/modal_cadastro.scss</file>
-            <file>file:/C:/wamp64/www/energia/application/controllers/Sigere.php</file>
-            <file>file:/C:/wamp64/www/energia/assets/css/modal_senha.scss</file>
-            <file>file:/C:/wamp64/www/energia/assets/js/sigere.js</file>
-            <file>file:/C:/wamp64/www/energia/assets/css/global.scss</file>
->>>>>>> c0d284981c6bdc3f17da362f0ed8f6f5ea2ba4fd
         </group>
     </open-files>
 </project-private>
