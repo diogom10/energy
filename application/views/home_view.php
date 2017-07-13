@@ -22,30 +22,28 @@
     <body>
         <div class="masc"></div>
 
-       
-            <div class="aside">
 
+        <div class="aside">
+            <div class="control-menu"></div>
+        </div>
+
+        <div class="header">
+
+            <div class="title">SIGERE</div>
+
+        </div>
+
+        <div class="section">
+            Seja bem vindo <?php echo $this->session->userdata('nome_de_usuario'); ?>
+        </div>
+
+        <div class="footer">
+            <div class="f-text">
+                <div class="f-text-geral">@2017 Sigere.com | Todos os direitos reservados</div>
+                <div class="f-text-geral">É proibida a reprodução total ou parcial de qualquer conteudo deste site</div>
             </div>
+        </div>
 
-            <div class="header">
-                <div class="control-img">
-                    <img src="<?php echo base_url() ?>assets/images/menu.png" />  
-                </div>
-                <div class="title">SIGERE</div>
-
-            </div>
-
-            <div class="section">
-                Seja bem vindo <?php echo $this->session->userdata('nome_de_usuario'); ?>
-            </div>
-
-            <div class="footer">
-                <div class="f-text">
-                    <div class="f-text-geral">@2017 Sigere.com | Todos os direitos reservados</div>
-                    <div class="f-text-geral">É proibida a reprodução total ou parcial de qualquer conteudo deste site</div>
-                </div>
-            </div>
-       
     </body>
 
 

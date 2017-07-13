@@ -8,3 +8,13 @@ and open the template in the editor.
     Author     : user1
 */
 
+.aside
+{
+   width:20%;
+   height:668px;
+   border:solid 1px black;
+   position:absolute;
+   z-index: 999;
+   background-color: black;
+   opacity: 0.9;
+}

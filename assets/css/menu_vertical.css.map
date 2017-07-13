@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA;;;;EAIE;AACF;;;EAGE",
+"mappings": "AAAA;;;;EAIE;AACF;;;EAGE;AAEF,MACA;EACG,KAAK,EAAC,GAAG;EACT,MAAM,EAAC,KAAK;EACZ,MAAM,EAAC,eAAe;EACtB,QAAQ,EAAC,QAAQ;EACjB,OAAO,EAAE,GAAG;EACZ,gBAAgB,EAAE,KAAK;EACvB,OAAO,EAAE,GAAG",
 "sources": ["menu_vertical.scss"],
 "names": [],
 "file": "menu_vertical.css"
