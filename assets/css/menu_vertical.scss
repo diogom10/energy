@@ -17,12 +17,13 @@ $cor_fonte:#ffffff;
     width: 16%;
     min-width: 290px;
     min-height: 740px;
-    height: 100%;
+    height: 87%;
     position: fixed;
-    z-index: 2;
+    z-index: 1;
     background-color: black;
     opacity: 0.9;
     left: -16%;
+    display:none;
 
     .control-aside
     {
@@ -43,8 +44,8 @@ $cor_fonte:#ffffff;
                 min-width: 80px;
                 height: 46%;
                 min-height: 80px;
-                margin: 0% 35% 0% 35%;
-
+                margin: 0% 38% 0% 38%;
+ 
 
                 .img-user-aside
                 {
@@ -178,4 +179,11 @@ $cor_fonte:#ffffff;
 
         }
     }
+}
+
+.control-section
+{
+    width:100%;
+    height:100%;
+    
 }

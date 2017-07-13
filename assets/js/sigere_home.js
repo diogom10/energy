@@ -10,8 +10,13 @@ $(document).ready(function () {
 
     $(".icon-menu").click(function () {
 
+        setTimeout(function () {
+            $('.aside').show();
+
+        },1);
         $(".aside").animate({left: '0%'});
         $(".masc-icon").show();
+        $(".icon-menu").hide();
         $(".control-icon-menu").animate({left: '18%'});
         $("#menu-aside-luz").mouseenter(function () {
             $("#menu-aside-controle").fadeIn(200);
@@ -35,11 +40,17 @@ $(document).ready(function () {
 
     $(".masc-icon").click(function () {
 
-        $(".aside").animate({left: '-16%'});
-        $(".masc-icon").hide();
-        $(".control-icon-menu").animate({left: '3%'});
+        $(".aside").animate({left: '-18%'});
 
-        
+        $(".masc-icon").hide();
+        $(".icon-menu").show();
+        $(".control-icon-menu").animate({left: '3%'});
+        setTimeout(function () {
+            $('.aside').hide();
+
+        },300);
+
+
     });
 
 });

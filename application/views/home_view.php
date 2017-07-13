@@ -23,7 +23,20 @@
         <div class="masc"></div>
 
 
-        <div class="aside">
+       
+
+        <div class="header">
+            <div class="control-icon-menu">
+               
+               <img class="masc-icon" src="<?php echo base_url(); ?>assets/images/menu.png" />
+               <img class="icon-menu" src="<?php echo base_url(); ?>assets/images/menu.png" />
+            </div>
+            <div class="title">SIGERE</div>
+
+        </div>
+
+        <div class="section">
+             <div class="aside">
             <div class="control-aside">
                 <div class="header-aside">
                     <div class="control-img-aside">
@@ -51,19 +64,9 @@
                 <div class="footer-aside"></div>
             </div>
         </div>
-
-        <div class="header">
-            <div class="control-icon-menu">
-               
-               <img class="masc-icon" src="<?php echo base_url(); ?>assets/images/menu.png" />
-               <img class="icon-menu" src="<?php echo base_url(); ?>assets/images/menu.png" />
+            <div class="control-section">
+                
             </div>
-            <div class="title">SIGERE</div>
-
-        </div>
-
-        <div class="section">
-
         </div>
 
         <div class="footer">

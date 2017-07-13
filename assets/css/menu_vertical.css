@@ -11,12 +11,13 @@ and open the template in the editor.
   width: 16%;
   min-width: 290px;
   min-height: 740px;
-  height: 100%;
+  height: 87%;
   position: fixed;
-  z-index: 2;
+  z-index: 1;
   background-color: black;
   opacity: 0.9;
-  left: -16%; }
+  left: -16%;
+  display: none; }
   .aside .control-aside {
     width: 100%;
     height: 93%;
@@ -29,7 +30,7 @@ and open the template in the editor.
         min-width: 80px;
         height: 46%;
         min-height: 80px;
-        margin: 0% 35% 0% 35%; }
+        margin: 0% 38% 0% 38%; }
         .aside .control-aside .header-aside .control-img-aside .img-user-aside {
           cursor: pointer;
           width: 100%;
@@ -88,5 +89,9 @@ and open the template in the editor.
           display: none; }
         .aside .control-aside .section-aside .control-menu-aside #menu-aside-relatorio:hover {
           background-color: #1f1e1e; }
+
+.control-section {
+  width: 100%;
+  height: 100%; }
 
 /*# sourceMappingURL=menu_vertical.css.map */
