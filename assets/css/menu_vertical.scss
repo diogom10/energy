@@ -7,14 +7,175 @@ and open the template in the editor.
     Created on : 12/07/2017, 12:01:17
     Author     : user1
 */
+$cores_fixas:#009688;
+$fonte-geral:'Open Sans', sans-serif;
+$cor_fonte:#ffffff;
 
 .aside
 {
-   width:20%;
-   height:668px;
-   border:solid 1px black;
-   position:absolute;
-   z-index: 999;
-   background-color: black;
-   opacity: 0.9;
+
+    width: 16%;
+    min-width: 290px;
+    min-height: 740px;
+    height: 100%;
+    position: fixed;
+    z-index: 2;
+    background-color: black;
+    opacity: 0.9;
+    left: -16%;
+
+    .control-aside
+    {
+        width: 100%;
+        height: 93%;
+        margin: 8% 0% 8% 0%;
+        //  border: solid 1px yellow;
+
+        .header-aside
+        {
+            width: 100%;
+            height: 20%;
+            // border: solid 1px yellow;
+
+            .control-img-aside
+            {
+                width: 27%;
+                min-width: 80px;
+                height: 46%;
+                min-height: 80px;
+                margin: 0% 35% 0% 35%;
+
+
+                .img-user-aside
+                {
+                    cursor:pointer;
+                    width: 100%;
+                    height: 100%;
+                    border-radius:50%;
+                }
+            }
+            .control-text-aside
+            {
+                //border: solid 1px red;
+                margin-top:3%;
+
+                .text-name-aside
+                {
+                    font-family: $fonte-geral;
+                    color:$cor_fonte;
+                    font-size: 25px;
+                    text-align: center;
+                    cursor:pointer;
+                }
+                .text-name-aside:hover
+                    {
+                    text-decoration: underline;  
+                }
+
+            }
+
+        }
+
+        .section-aside
+        {
+            width: 100%;
+            height: 45%;
+            //border: solid 1px yellow;
+            .control-menu-aside
+            {
+                .menu-aside-geral
+                { 
+                    font-size: 16px;
+                    text-align: center;
+
+                    cursor:pointer;
+                    font-family: $fonte-geral;
+                    color:$cor_fonte;
+                    width: 100%;
+                    height: 50px;
+                    // border: solid 1px red;
+                    // padding: 10px 0;
+                    padding: 20px 0px 0px;
+                    border-bottom: 1px solid #1f1e1e
+
+                }
+
+                #menu-aside-home
+                {
+                    border-top: 1px solid #1f1e1e
+
+                }   #menu-aside-home:hover
+                    {
+                    background-color:#1f1e1e;
+
+                }
+
+                #menu-aside-luz
+                {
+
+
+                } /*#menu-aside-luz:hover
+                    {
+                    background-color:#1f1e1e;
+                }*/
+
+                #menu-aside-energia
+                {
+
+
+                } /*#menu-aside-energia:hover
+                    {
+                    background-color:#1f1e1e;
+                }*/
+
+
+                #menu-aside-conta
+                {
+
+
+                } #menu-aside-conta:hover
+                    {
+                    background-color:#1f1e1e;
+                }
+
+
+                #menu-aside-controle
+                {
+                    background-color: #312c2c;
+                    display:none;
+
+                } #menu-aside-controle:hover
+                    {
+                    background-color:#1f1e1e;
+                }
+
+                #menu-aside-medicao
+                {
+                    background-color: #312c2c;
+                    display:none;
+
+                } #menu-aside-medicao:hover
+                    {
+
+                    background-color:#1f1e1e;
+                }
+
+                #menu-aside-relatorio    
+                {
+                    background-color: #312c2c;
+                    display:none;
+
+                } #menu-aside-relatorio:hover
+                    {
+                    background-color:#1f1e1e;
+                }
+            }
+
+        }
+
+        .footer-aside
+        {
+
+        }
+    }
 }

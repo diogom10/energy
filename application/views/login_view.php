@@ -11,7 +11,8 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <script  src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
-        <script  src="<?php echo base_url(); ?>assets/js/sigere.js"></script>
+        <script  src="<?php echo base_url(); ?>assets/js/sigere_login.js"></script>
+      
 
 
 

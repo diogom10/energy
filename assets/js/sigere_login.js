@@ -15,7 +15,7 @@ $(document).ready(function () {
 
         $(".geral_modal").fadeIn(tempo);
         $(".masc").fadeIn(tempo);
-
+      //  $(".geral_modal").animate({top: '24%'});
     });
 // ao clicar na mascara todas inputs e atributos são resetados
     $(".masc").on("click", function () {
