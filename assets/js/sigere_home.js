@@ -14,7 +14,9 @@ $(document).ready(function () {
             $('.aside').show();
 
         },1);
+        
         $(".aside").animate({left: '0%'});
+        $(".control-section").animate({width: '84%'});
         $(".masc-icon").show();
         $(".icon-menu").hide();
         $(".control-icon-menu").animate({left: '18%'});
@@ -41,7 +43,7 @@ $(document).ready(function () {
     $(".masc-icon").click(function () {
 
         $(".aside").animate({left: '-18%'});
-
+        $(".control-section").animate({width: '100%'});
         $(".masc-icon").hide();
         $(".icon-menu").show();
         $(".control-icon-menu").animate({left: '3%'});

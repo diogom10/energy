@@ -13,13 +13,12 @@ $cor_fonte:#ffffff;
 
 .aside
 {
-
     width: 16%;
-    min-width: 290px;
     min-height: 740px;
-    height: 87%;
+    height: 100%;
     position: fixed;
     z-index: 1;
+    min-width: 198px;
     background-color: black;
     opacity: 0.9;
     left: -16%;
@@ -45,7 +44,7 @@ $cor_fonte:#ffffff;
                 height: 46%;
                 min-height: 80px;
                 margin: 0% 38% 0% 38%;
- 
+
 
                 .img-user-aside
                 {
@@ -183,7 +182,54 @@ $cor_fonte:#ffffff;
 
 .control-section
 {
-    width:100%;
-    height:100%;
-    
+    width: 100%;
+    min-width: 800px;
+    height: 100%;
+    border: solid 1px red;
+    float: right;
+
+    .control-content
+    {
+        width: 80%;
+        height: 80%;
+        border: solid 1px green;
+        /* float: left; */
+        position: relative;
+        left: 8%;
+        top: 9%;
+        display: table;
+        .text-content
+        {
+            position: relative;
+            text-align: center;
+            margin-bottom: 2%;
+        }
+
+        .content-geral
+        {
+            width: 30%;
+            height: 40%;
+            float:left;
+            border: solid 1px black;
+            margin-left: 1%;
+            position: relative;
+            left: 3%;
+            top:2%;
+        }
+        .content-luz
+        {
+
+        }
+
+        .content-energia
+        {
+
+        }
+
+        .content-informacao
+        {
+
+        }
+    }
+
 }
