@@ -3,6 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+var base_url = 'http://localhost/energia/index.php/';
 
 $(document).ready(function () {
 
@@ -13,13 +14,13 @@ $(document).ready(function () {
         setTimeout(function () {
             $('.aside').show();
 
-        },1);
-        
+        }, 1);
+
         $(".aside").animate({left: '0%'});
-        $(".control-section").animate({width: '84%'});
+        $(".control-section").animate({left: '18%'});
         $(".masc-icon").show();
         $(".icon-menu").hide();
-        $(".control-icon-menu").animate({left: '18%'});
+        //  $(".control-icon-menu").animate({left: '18%'});
         $("#menu-aside-luz").mouseenter(function () {
             $("#menu-aside-controle").fadeIn(200);
         });
@@ -43,20 +44,59 @@ $(document).ready(function () {
     $(".masc-icon").click(function () {
 
         $(".aside").animate({left: '-18%'});
-        $(".control-section").animate({width: '100%'});
+        $(".control-section").animate({left: '0%'});
         $(".masc-icon").hide();
         $(".icon-menu").show();
         $(".control-icon-menu").animate({left: '3%'});
         setTimeout(function () {
             $('.aside').hide();
 
-        },300);
+        }, 300);
 
 
     });
 
-});
+    $(".sair").on("click", function () {
 
+        $(".g-modal-sair").fadeIn(500);
+        $(".masc").fadeIn(500);
+        $(".btn-sim").on("click", function () {
+
+
+            $.ajax({
+                type: 'Post',
+                url: base_url + "Home/sair",
+                cache: false,
+                data: {login: true},
+                dataType: 'JSON',
+                success: function () {
+
+                },
+                error: function () {}
+
+            }).done(function (Retorno_sair) {
+                if (Retorno_sair === 1);
+                window.location.href = 'http://localhost/energia';
+            });
+
+        });
+
+    });
+
+    $(".masc").on("click", function () {
+
+        $(".g-modal-sair").hide();
+        $(".masc").hide();
+
+    });
+
+    $(".btn-nao").on("click", function () {
+
+        $(".g-modal-sair").hide();
+        $(".masc").hide();
+
+    });
+});
 
 
 

@@ -2,13 +2,13 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Sigere extends CI_Controller {
+class Login extends CI_Controller {
 
     public function __construct() {
 
         parent:: __construct();
         $this->load->library('session');
-        $this->load->model('Sigere_model', 'model', TRUE);
+        $this->load->model('Login_model', 'model', TRUE);
         $this->load->helper('url');
     }
 
@@ -19,12 +19,9 @@ class Sigere extends CI_Controller {
         $this->load->view('login_view.php', $data);
     }
 
-    
     public function home_view() {
-        $data['title'] = "Sigere";
-        $this->load->view('home_view.php', $data);
+       
     }
-    
 
     public function validador_cadastro() {
 
@@ -50,13 +47,10 @@ class Sigere extends CI_Controller {
         echo json_encode($retorno_cadastro);
     }
 
-    
     public function cadastrar($dados) {
 
         $this->model->inserir($dados);
     }
-    
-    
 
     public function validador_login() {
         $dados_sessao = 0;
@@ -74,15 +68,23 @@ class Sigere extends CI_Controller {
         } else if ($valida['json'] == 1) {
             $retorno_login['existe_erro'] = "senha";
             $retorno_login['mensagem'] = "*Senha Incorreta";
-        } else {
+        } else if ($valida['json'] == 2) {
             $retorno_login['existe_erro'] = "valido";
             $retorno_login['usuario'] = $valida["nome_login"];
             $usuario = explode(' ', $valida["nome_login"]);
             $dados_sessao = array(
                 'nome_de_usuario' => $usuario[0] . " " . $usuario[1],
                 'email' => $dados_login['email'],
-                'logged_in' => TRUE
+                'logged_in' => true
             );
+            $this->session->set_userdata($dados_sessao);
+        } else {
+            $dados_sessao = array(
+                'nome_de_usuario' => null,
+                'email' => null,
+                'logged_in' => false
+            );
+            
             $this->session->set_userdata($dados_sessao);
         }
         echo json_encode($retorno_login);

@@ -2,7 +2,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-Class Sigere_model extends CI_Model {
+Class Login_model extends CI_Model {
 
     public function valida_cadastro($dados) {
 
