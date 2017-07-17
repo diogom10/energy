@@ -5,7 +5,7 @@ $fonte-geral:'Open Sans', sans-serif;
 $cor_fonte:#ffffff;
 body
 {
-    width:100%;
+    //  width:100%;
     margin: 0 auto;
 
 
@@ -16,20 +16,25 @@ body
         background-color:$cores_fixas;
         display: table;
         width: 100%;
+        position: fixed;
+        z-index: 2;
 
 
 
 
         .title
         {
-            font-family: 'Open Sans', sans-serif;
-            font-size:40px;
-            color:#ffffff;
+            font-family: $fonte_geral;
+            font-size: 40px;
+            color: #ffffff;
             text-align: center;
-            left: -4%;
+            float: left;
+            /* left: 50%; */
+            margin-left: 46%;
 
 
         }
+
         .control-icon-menu
         {
             width: 35px;
@@ -53,6 +58,21 @@ body
                 height:100%;
                 cursor:pointer;
             }
+        }
+
+        .sair
+        {
+            font-family: $fonte_geral;
+            color: #ffffff;
+            cursor: pointer;
+            left: 40%;
+            font-size: 20px;
+            position: relative;
+            margin-top: 12px;
+            
+
+        } .sair:hover{
+           text-decoration: underline;
         }
 
     }

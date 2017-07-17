@@ -202,7 +202,7 @@ $(document).ready(function () {
 
             $.ajax({
                 type: 'Post',
-                url: base_url + "Sigere/validador_cadastro",
+                url: base_url + "Login/validador_cadastro",
                  cache: false,
                 data: {name: name, email: email, pwd: password},
                 dataType: 'JSON',
@@ -350,7 +350,7 @@ $(document).ready(function () {
      
             $.ajax({
                 type: 'Post',
-                url: base_url + "Sigere/validador_login",
+                url: base_url + "Login/validador_login",
                 cache: false,
                 data: {email_login: email_login, pwd_login: password_login},
                 dataType: 'JSON',
@@ -377,7 +377,7 @@ $(document).ready(function () {
                 
                 else
                 {
-                    window.location.href='http://localhost/energia/index.php/Sigere/home_view';
+                    window.location.href = 'http://localhost/energia/index.php/Home/index';
                     console.log("usuario:: "+retorno_login.usuario);
                   
                 }

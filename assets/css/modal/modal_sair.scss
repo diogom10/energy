@@ -1,0 +1,92 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17/07/2017, 11:07:52
+    Author     : user1
+*/
+$borda-modal:#b7b7b7;
+$fonte-geral:'Open Sans', sans-serif;
+$cor_fonte_modal:#116961;
+
+.g-modal-sair{
+    display:none;
+    width: 24%;
+    min-width: 400px;
+    height: 21%;
+    top: 30%;
+    left: 39%;
+    z-index: 9999;
+    position: fixed;
+
+    .v-modal-sair
+    {
+        background-color: #ffffff;
+        width: 100%;
+
+        border: solid 1px $borda-modal;
+        border-radius:9px;
+
+        .h-modal-sair
+        {
+            text-align:center;
+            font-family:$fonte-geral;
+            font-size: 25px;
+            color:$cor_fonte_modal;
+            padding-bottom: 3%;
+        }
+
+        .s-modal-sair
+        {
+            width:100%;
+            height:50px;
+            margin-top: 4%;
+            margin-bottom: 3%;
+            display:table;
+
+            .g-btn-sair{
+
+                width: 34%;
+                padding: 10px 0;
+                background-color: #428bca;
+                position: relative;
+                left: 12%;
+                border-radius: 6px;
+                float: left;
+                margin-left: 3%;
+            }
+
+            .text-btn-sim
+            {
+                font-family: $fonte-geral;
+                color:#ffffff;
+                text-align:center;
+                position: relative;
+
+            }
+
+            .text-btn-nao
+            {
+                font-family: $fonte-geral;
+                color:#ffffff;
+                text-align:center;
+                position: relative;
+
+            }
+            .btn-sim:hover
+                {
+                background-color:#3b7ab1;
+                cursor:pointer;
+            }
+
+            .btn-nao:hover
+                {
+                background-color:#3b7ab1;
+                cursor:pointer;
+            }
+        }
+
+    }
+}
