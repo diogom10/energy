@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 var base_url = 'http://localhost/energia/index.php/';
+var base_url_image = 'http://localhost/energia/index.php/assets/user/';
 
 $(document).ready(function () {
 
@@ -75,7 +76,8 @@ $(document).ready(function () {
                 error: function () {}
 
             }).done(function (Retorno_sair) {
-                if (Retorno_sair === 1);
+                if (Retorno_sair === 1)
+                    ;
                 window.location.href = 'http://localhost/energia';
             });
 
@@ -94,6 +96,46 @@ $(document).ready(function () {
 
         $(".g-modal-sair").hide();
         $(".masc").hide();
+
+    });
+
+
+    $(".img-user-aside").mouseenter(function () {
+        $(".text-img-user").show();
+    });
+
+    $(".img-user-aside").mouseleave(function () {
+        $(".text-img-user").hide();
+    });
+
+
+    $(".img-user-aside").click(function () {
+        $("#file").click();
+    });
+
+    $("#file").change(function (e) {
+        var file = $('#file').val();
+
+        var nome_arquivo = $(this).val().split("\\").pop();
+
+
+        $.ajax({
+            url: base_url + 'Home/upload',
+
+            type: "POST",
+            dataType: 'text',
+            data: file,
+            cache: false,
+            contentType: false,
+            processData: false,
+          
+            success: function (data) {
+
+            }
+        });/*.done(function (Retorno_upload) {
+         
+         
+         });*/
 
     });
 });

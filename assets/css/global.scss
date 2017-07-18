@@ -62,17 +62,18 @@ body
 
         .sair
         {
-            font-family: $fonte_geral;
+            font-family: $fonte-geral;
             color: #ffffff;
             cursor: pointer;
-            left: 40%;
+            /* left: 40%; */
             font-size: 20px;
-            position: relative;
+            position: absolute;
             margin-top: 12px;
-            
+            margin-left: 97%;
+
 
         } .sair:hover{
-           text-decoration: underline;
+            text-decoration: underline;
         }
 
     }

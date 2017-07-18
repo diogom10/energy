@@ -20,7 +20,7 @@ class Login extends CI_Controller {
     }
 
     public function home_view() {
-       
+        
     }
 
     public function validador_cadastro() {
@@ -30,6 +30,7 @@ class Login extends CI_Controller {
             "nome" => $this->input->Post("name"),
             "email" => $this->input->Post("email"),
             "senha" => md5($this->input->Post("pwd") . HASH),
+            "foto" => "assets/images/user/default.jpg"
         );
 
         $retorno_cadastro = [];
@@ -60,6 +61,7 @@ class Login extends CI_Controller {
             "senha" => md5($this->input->Post("pwd_login") . HASH),
         );
         $retorno_login = [];
+
         $valida = $this->model->valida_login($dados_login);
 
         if ($valida['json'] == 0) {
@@ -69,13 +71,17 @@ class Login extends CI_Controller {
             $retorno_login['existe_erro'] = "senha";
             $retorno_login['mensagem'] = "*Senha Incorreta";
         } else if ($valida['json'] == 2) {
+
             $retorno_login['existe_erro'] = "valido";
             $retorno_login['usuario'] = $valida["nome_login"];
+
             $usuario = explode(' ', $valida["nome_login"]);
+
             $dados_sessao = array(
                 'nome_de_usuario' => $usuario[0] . " " . $usuario[1],
                 'email' => $dados_login['email'],
-                'logged_in' => true
+                'logged_in' => true,
+                'id_user' => $valida['id_usuario']
             );
             $this->session->set_userdata($dados_sessao);
         } else {
@@ -84,7 +90,7 @@ class Login extends CI_Controller {
                 'email' => null,
                 'logged_in' => false
             );
-            
+
             $this->session->set_userdata($dados_sessao);
         }
         echo json_encode($retorno_login);

@@ -11,7 +11,10 @@ class Home extends CI_Controller {
     }
 
     public function index() {
-
+        $user = $this->model->home_usuario($this->session->userdata('id_user'));
+        $data['nome'] = $user['nome'];
+        $data['email'] = $user['email'];
+        $data['foto'] = $user['foto'];
         $data['title'] = "Sigere";
         $this->load->view('home_view.php', $data);
     }
@@ -25,6 +28,16 @@ class Home extends CI_Controller {
         }
 
         echo json_encode($Retorno_sair);
+    }
+
+    public function upload() {
+
+      
+
+
+     
+        
+       var_dump( $_FILES['file']['tmp_name']);
     }
 
 }

@@ -42,7 +42,13 @@
                 <div class="control-aside">
                     <div class="header-aside">
                         <div class="control-img-aside">
-                            <img class="img-user-aside" src="<?php echo base_url(); ?>assets/images/kratos.jpg" />
+
+                            <!--<img class="img-user-aside"  type="" src="<?php echo base_url(); ?>assets/images/user/default.jpg" />-->
+                            <img class="img-user-aside"  type="" src="<?php echo base_url().$foto ?>" />
+                            <div class="text-img-user">Atualizar a Foto</div>
+                            <form  method="post" action="some_action" enctype="multipart/form-data">
+                                <input id="file" value=" " type="file" class="file" data-show-preview="false">
+                            </form>
                         </div>
                         <div class="control-text-aside">
                             <div class="text-name-aside"> <?= $this->session->userdata('nome_de_usuario'); ?></div>
@@ -69,20 +75,20 @@
             <div class="section">
                 <div class="control-section">
                     <div class="control-content">
-                       <!-- <div class="text-content">Sistemas</div>-->
+                        <!-- <div class="text-content">Sistemas</div>-->
                         <div class="content-luz content-geral">
-                           <!-- <div class="text-geral-home">Sistema de Luz</div>-->
+                            <!-- <div class="text-geral-home">Sistema de Luz</div>-->
                             <div class="control-img-lampada">
-                               <img class="img-lampada" src="<?php echo base_url() ?>assets/images/lampada3.svg">
+                                <img class="img-lampada" src="<?php echo base_url() ?>assets/images/lampada3.svg">
                             </div>
                         </div>
-                        
+
                         <div class="content-energia content-geral">
-                             <div class="control-img-energia">
-                               <img class="img-energia" src="<?php echo base_url() ?>assets/images/energia.svg">
+                            <div class="control-img-energia">
+                                <img class="img-energia" src="<?php echo base_url() ?>assets/images/energia.svg">
                             </div>
                         </div>
-                       
+
                     </div>
                 </div>
             </div>
@@ -96,7 +102,7 @@
         } else {
             header("Location:http://localhost/energia//"); /* Redirect browser */
 
-            
+
             exit;
         }
         ?>
