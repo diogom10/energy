@@ -35,10 +35,11 @@ body {
       font-family: "Open Sans", sans-serif;
       color: #ffffff;
       cursor: pointer;
-      left: 40%;
+      /* left: 40%; */
       font-size: 20px;
-      position: relative;
-      margin-top: 12px; }
+      position: absolute;
+      margin-top: 12px;
+      margin-left: 97%; }
     body .header .sair:hover {
       text-decoration: underline; }
   body .section {
