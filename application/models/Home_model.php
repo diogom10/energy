@@ -18,8 +18,14 @@ Class Home_model extends CI_Model {
             $retorno['email'] = $result->foto;
             $retorno['foto'] = $result->foto;
         }
-        
+
         return $retorno;
+    }
+
+    public function upload_img($data) {
+        $this->db->set('foto', $data["foto"]);
+        $this->db->where('id', $data["id"]);
+        $this->db->update('usuario');
     }
 
 }

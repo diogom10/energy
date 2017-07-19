@@ -4,7 +4,8 @@
  * and open the template in the editor.
  */
 var base_url = 'http://localhost/energia/index.php/';
-var base_url_image = 'http://localhost/energia/index.php/assets/user/';
+var url_upload = 'http://localhost/energia/';
+
 
 $(document).ready(function () {
 
@@ -114,28 +115,31 @@ $(document).ready(function () {
     });
 
     $("#file").change(function (e) {
-        var file = $('#file').val();
+        //var file = $('#file').val();
+        //var nome_arquivo = $(this).val().split("\\").pop();
 
-        var nome_arquivo = $(this).val().split("\\").pop();
+        var data = new FormData();
 
+        data.append('file', $('#file')[0].files[0]);
 
         $.ajax({
             url: base_url + 'Home/upload',
-
             type: "POST",
-            dataType: 'text',
-            data: file,
+            dataType: 'JSON',
+            data: data,
             cache: false,
             contentType: false,
             processData: false,
+            success: function () {}
+        }).done(function (Retorno_upload) {
+               
+           if(Retorno_upload.valido){
+               $(".img-user-aside").attr('src',url_upload + Retorno_upload.imagem);
+           }
           
-            success: function (data) {
+        
 
-            }
-        });/*.done(function (Retorno_upload) {
-         
-         
-         });*/
+        });
 
     });
 });
