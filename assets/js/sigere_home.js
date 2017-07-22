@@ -77,8 +77,7 @@ $(document).ready(function () {
                 error: function () {}
 
             }).done(function (Retorno_sair) {
-                if (Retorno_sair === 1)
-                    ;
+                if (Retorno_sair === 1);
                 window.location.href = 'http://localhost/energia';
             });
 

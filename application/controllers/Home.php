@@ -33,29 +33,42 @@ class Home extends CI_Controller {
     public function upload() {
 
         $Retorno_upload = [];
-        
-        if (!empty($_FILES['file'])) {
-            
-            $endereco = 'assets/images/user/' . $_FILES['file']['name'];
-            
-             move_uploaded_file($_FILES['file']['tmp_name'], './'.$endereco);
-             
-            $data_model = array(
-                'id' => $this->session->userdata('id_user'),
-                'foto' => $endereco
-            );
-            
-            $this->model->upload_img($data_model);
-            
-            $Retorno_upload['valido'] = TRUE;
-            $Retorno_upload['imagem'] = $endereco;
-            
-        } else { 
-            $Retorno_upload['valido'] = FALSE;
-            $Retorno_upload['erro'] = "erro";
-        }
 
-        echo json_encode($Retorno_upload);
+        if (!empty($_FILES['file'])) {
+
+
+            $foto = explode('.', $_FILES['file']['name']);
+
+            var_dump($foto);
+
+            $extensao = $foto.array_pop();
+            $nome = array_shift($foto);
+
+            var_dump($nome + $extensao . "2");
+
+            if ($extensao == "jpg" || "jpeg" || "png" || "svg") {
+
+
+                $endereco = 'assets/images/user/' . $nome . uniqid() . $extensao;
+
+                move_uploaded_file($_FILES['file']['tmp_name'], './' . $endereco);
+
+                $data_model = array(
+                    'id' => $this->session->userdata('id_user'),
+                    'foto' => $endereco
+                );
+
+                $this->model->upload_img($data_model);
+
+                $Retorno_upload['valido'] = TRUE;
+                $Retorno_upload['imagem'] = $endereco;
+            } else {
+                $Retorno_upload['valido'] = FALSE;
+                $Retorno_upload['erro'] = "erro";
+            }
+
+            echo json_encode($Retorno_upload);
+        }
     }
 
 }
