@@ -121,6 +121,10 @@ $(document).ready(function () {
 
         data.append('file', $('#file')[0].files[0]);
 
+
+
+        console.log(data);
+
         $.ajax({
             url: base_url + 'Home/upload',
             type: "POST",
@@ -131,12 +135,18 @@ $(document).ready(function () {
             processData: false,
             success: function () {}
         }).done(function (Retorno_upload) {
-               
-           if(Retorno_upload.valido){
-               $(".img-user-aside").attr('src',url_upload + Retorno_upload.imagem);
-           }
-          
-        
+
+            if (Retorno_upload.valido) {
+                $(".img-user-aside").attr('src', url_upload + Retorno_upload.imagem);
+                $(".J-text").hide();
+
+            } else {
+                $(".J-text").show();
+                $(".J-text").html(Retorno_upload.erro);
+
+            }
+
+
 
         });
 
