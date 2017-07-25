@@ -206,8 +206,7 @@ $(document).ready(function () {
                  cache: false,
                 data: {name: name, email: email, pwd: password},
                 dataType: 'JSON',
-                success: function () {
-                },
+                success: function () {},
                 error: function () {}
 
             }).

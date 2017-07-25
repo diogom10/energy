@@ -35,9 +35,10 @@ Class Login_model extends CI_Model {
         $retorno = 0;
         $resposta = array(
             "json" => 0,
-            "nome_login" => 'default'
+            "nome_login" => '',
+            'id_usuario' => ''
         );
-        $this->db->select('email,senha,nome');
+        $this->db->select('id,email,senha,nome');
         $this->db->where('email', $dados['email']);
         $query = $this->db->get('usuario')->result();
 
@@ -48,8 +49,8 @@ Class Login_model extends CI_Model {
                 if ($login->senha == $dados['senha']) {
                     
                     $resposta["json"] = 2;
-                    $resposta["nome_login"] = $login->nome ;
-                    
+                    $resposta["nome_login"] = $login->nome;
+                    $resposta["id_usuario"] = $login->id;
                 } else {
                     $resposta["json"] = 1; //senha incorreta
                 }

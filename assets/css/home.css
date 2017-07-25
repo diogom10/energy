@@ -22,22 +22,33 @@ and open the template in the editor.
   bottom: 0%; }
   .aside .control-aside {
     width: 100%;
-    height: 93%;
-    margin: 8% 0% 8% 0%; }
+    height: 100%;
+    margin: 20% 0% 8% 0%; }
     .aside .control-aside .header-aside {
       width: 100%;
       height: 20%; }
       .aside .control-aside .header-aside .control-img-aside {
-        width: 27%;
-        min-width: 80px;
-        height: 46%;
-        min-height: 80px;
-        margin: 0% 38% 0% 38%; }
+        width: 31%;
+        height: 58%;
+        margin: 0 auto;
+        min-width: 85px;
+        min-height: 87px;
+        z-index: 2; }
         .aside .control-aside .header-aside .control-img-aside .img-user-aside {
           cursor: pointer;
           width: 100%;
           height: 100%;
           border-radius: 50%; }
+        .aside .control-aside .header-aside .control-img-aside .img-user-aside:hover {
+          filter: brightness(40%); }
+        .aside .control-aside .header-aside .control-img-aside .text-img-user {
+          position: relative;
+          bottom: 48%;
+          left: 13%;
+          font-family: "Open Sans", sans-serif;
+          color: #ffffff;
+          font-size: 10px;
+          display: none; }
       .aside .control-aside .header-aside .control-text-aside {
         margin-top: 3%; }
         .aside .control-aside .header-aside .control-text-aside .text-name-aside {
@@ -48,6 +59,8 @@ and open the template in the editor.
           cursor: pointer; }
         .aside .control-aside .header-aside .control-text-aside .text-name-aside:hover {
           text-decoration: underline; }
+      .aside .control-aside .header-aside #file {
+        display: none; }
     .aside .control-aside .section-aside {
       width: 100%;
       height: 45%; }
@@ -132,7 +145,9 @@ and open the template in the editor.
       height: 46%;
       /* left: 24%; */
       /* position: relative; */
-      margin: 0% 1% 1% 35%; }
+      margin: 0 auto;
+      min-width: 95px;
+      min-height: 138px; }
     .control-section .control-content .content-luz .img-lampada {
       width: 100%;
       height: 100%;
@@ -147,7 +162,9 @@ and open the template in the editor.
       height: 46%;
       /* left: 24%; */
       /* position: relative; */
-      margin: 0% 1% 1% 35%; }
+      margin: 0 auto;
+      min-width: 95px;
+      min-height: 138px; }
     .control-section .control-content .content-energia .img-energia {
       width: 100%;
       height: 100%;
