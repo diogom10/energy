@@ -76,12 +76,27 @@ $cor_borda:#009688;
                 }
 
 
+
             }
+
+
+
 
             .control-text-aside
             {
                 //border: solid 1px red;
                 margin-top:3%;
+
+                .J-text
+                {
+                    position: relative;
+                    bottom: 48%;
+                    left: 30%;
+                    font-family: "Open Sans", sans-serif;
+                    color: #ffffff;
+                    font-size: 10px;
+
+                }
 
                 .text-name-aside
                 {
@@ -92,7 +107,7 @@ $cor_borda:#009688;
                     cursor:pointer;
                 }
                 .text-name-aside:hover
-                   {
+                    {
                     text-decoration: underline;  
                 }
 
@@ -103,7 +118,7 @@ $cor_borda:#009688;
             }
 
         }
-    
+
 
         .section-aside
         {

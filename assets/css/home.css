@@ -51,6 +51,13 @@ and open the template in the editor.
           display: none; }
       .aside .control-aside .header-aside .control-text-aside {
         margin-top: 3%; }
+        .aside .control-aside .header-aside .control-text-aside .J-text {
+          position: relative;
+          bottom: 48%;
+          left: 30%;
+          font-family: "Open Sans", sans-serif;
+          color: #ffffff;
+          font-size: 10px; }
         .aside .control-aside .header-aside .control-text-aside .text-name-aside {
           font-family: "Open Sans", sans-serif;
           color: #ffffff;
