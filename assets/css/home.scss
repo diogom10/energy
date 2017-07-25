@@ -62,7 +62,6 @@ $cor_borda:#009688;
                     {
                     filter: brightness(40%);
 
-<<<<<<< HEAD
                 }
 
                 .text-img-user
@@ -75,31 +74,9 @@ $cor_borda:#009688;
                     font-size: 10px;
                     display: none;
                 }
-=======
-                }
-
-                .text-img-user
-                {
-                    position: relative;
-                    bottom: 48%;
-                    left: 13%;
-                    font-family: $fonte-geral;
-                    color: $cor_fonte;
-                    font-size: 10px;
-                    display: none;
-                }
-
->>>>>>> b2eea89
-
-
             }
 
-<<<<<<< HEAD
-=======
 
-
-
->>>>>>> b2eea89
             .control-text-aside
             {
                 //border: solid 1px red;
@@ -125,7 +102,7 @@ $cor_borda:#009688;
                     cursor:pointer;
                 }
                 .text-name-aside:hover
-                   {
+                    {
                     text-decoration: underline;  
                 }
 
@@ -136,7 +113,7 @@ $cor_borda:#009688;
             }
 
         }
-    
+
 
 
         .section-aside
