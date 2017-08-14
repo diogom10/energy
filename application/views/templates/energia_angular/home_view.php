@@ -9,16 +9,12 @@
             <link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>assets/css/login.css"/>
             <link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>assets/css/modal/modal_sair.css"/>
             <link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>assets/css/home.css"/>
-            <script  src="<?php echo base_url(); ?>assets/js/jquery-3.2.1.min.js"></script>
+            <script src="<?php echo base_url(); ?>assets/js/angular/angular.js"></script>
+            <script src="<?php echo base_url(); ?>assets/js/jquery/jquery-3.2.1.min.js"></script>
             <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-            <script  src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
             <script  src="<?php echo base_url(); ?>assets/js/sigere_login.js"></script>
             <script  src="<?php echo base_url(); ?>assets/js/sigere_home.js"></script>
-
-
-
-
         </head>
         <body>
             <div class="masc"></div>
@@ -37,25 +33,25 @@
 
                 <div class="sair">Sair</div>
             </div>
-            <?php $this->load->view('modal/sair_view.php'); ?>
+            <?php $this->load->view('templates/energia_jquery/modal/sair_view.php'); ?>
             <div class="aside">
                 <div class="control-aside">
                     <div class="header-aside">
                         <div class="control-img-aside">
 
 
-                            <!--<img class="img-user-aside"  type="" src="<?php echo base_url(); ?>assets/images/user/default.jpg" />-->
-                            <img class="img-user-aside" src="<?php echo base_url().$foto ?>" />
+                                <!--<img class="img-user-aside"  type="" src="<?php echo base_url(); ?>assets/images/user/default.jpg" />-->
+                            <img class="img-user-aside" src="<?php echo base_url() . $foto ?>" />
                             <div class="text-img-user">Atualizar a Foto</div>
                             <form  method="post" action="some_action" enctype="multipart/form-data">
                                 <input id="file" name="file" type="file" class="file" data-show-preview="false">
                             </form>
 
-                        
+
 
                         </div>
                         <div class="control-text-aside">
-                             <div class="J-text"></div>
+                            <div class="J-text"></div>
                             <div class="text-name-aside"> <?= $this->session->userdata('nome_de_usuario'); ?></div>
                         </div>
                     </div>

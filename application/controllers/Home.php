@@ -16,7 +16,7 @@ class Home extends CI_Controller {
         $data['email'] = $user['email'];
         $data['foto'] = $user['foto'];
         $data['title'] = "Sigere";
-        $this->load->view('home_view.php', $data);
+        $this->load->view('templates/energia_jquery/home_view.php', $data);
     }
 
     public function sair() {
@@ -33,83 +33,44 @@ class Home extends CI_Controller {
     public function upload() {
 
         $Retorno_upload = [];
-<<<<<<< HEAD
+        $validacao = 0;
+        $extencao = ["jpg", "jpeg", "tiff", "png"];
 
         if (!empty($_FILES['file'])) {
 
+            $foto_geral = explode(".", $_FILES['file']['name']);
+            $nome = $foto_geral[0];
+            $ext_arquivo = $foto_geral[1];
 
-            $foto = explode('.', $_FILES['file']['name']);
+            foreach ($extencao as $ext) {
+                if ($ext == $ext_arquivo) {
+                    $validacao++;
+                }
+            }
+            if ($validacao > 0) {
+                $endereco_final = 'assets/images/user/' . $nome . uniqid() . "." . $ext_arquivo;
 
-            var_dump($foto);
-
-            $extensao = $foto.array_pop();
-            $nome = array_shift($foto);
-
-            var_dump($nome + $extensao . "2");
-
-            if ($extensao == "jpg" || "jpeg" || "png" || "svg") {
-
-
-                $endereco = 'assets/images/user/' . $nome . uniqid() . $extensao;
-
-                move_uploaded_file($_FILES['file']['tmp_name'], './' . $endereco);
+                move_uploaded_file($_FILES['file']['tmp_name'], './' . $endereco_final);
 
                 $data_model = array(
                     'id' => $this->session->userdata('id_user'),
-                    'foto' => $endereco
+                    'foto' => $endereco_final
                 );
 
                 $this->model->upload_img($data_model);
 
                 $Retorno_upload['valido'] = TRUE;
-                $Retorno_upload['imagem'] = $endereco;
+                $Retorno_upload['imagem'] = $endereco_final;
             } else {
+
                 $Retorno_upload['valido'] = FALSE;
-                $Retorno_upload['erro'] = "erro";
+                $Retorno_upload['erro'] = "*Arquivo Invalido";
             }
 
             echo json_encode($Retorno_upload);
-=======
-        if (!empty($_FILES['file'])) {
-
-            $validacao = 0;
-            $extencao = ["jpg", "jpeg", "tiff", "png"];
-
-            if (!empty($_FILES['file'])) {
-
-                $foto_geral = explode(".", $_FILES['file']['name']);
-                $nome = $foto_geral[0];
-                $ext_arquivo = $foto_geral[1];
-
-                foreach ($extencao as $ext) {
-                    if ($ext == $ext_arquivo) {
-                        $validacao++;
-                    }
-                }
-                if ($validacao > 0) {
-                    $endereco_final = 'assets/images/user/' . $nome . uniqid() . "." . $ext_arquivo;
-
-                    move_uploaded_file($_FILES['file']['tmp_name'], './' . $endereco_final);
-
-                    $data_model = array(
-                        'id' => $this->session->userdata('id_user'),
-                        'foto' => $endereco_final
-                    );
-
-                    $this->model->upload_img($data_model);
-
-                    $Retorno_upload['valido'] = TRUE;
-                    $Retorno_upload['imagem'] = $endereco_final;
-                } else {
-
-                    $Retorno_upload['valido'] = FALSE;
-                    $Retorno_upload['erro'] = "*Arquivo Invalido";
-                }
-
-                echo json_encode($Retorno_upload);
             }
->>>>>>> 464ac3603a334410d94d23a8853361f7ee923f9e
+     
         }
     }
 
-}
+

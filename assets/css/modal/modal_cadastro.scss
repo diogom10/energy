@@ -16,6 +16,7 @@ $tamanho_inputs:34px;
 
 .geral_modal
 {
+    
     display:none;
     width: 40%;
     min-width: 400px;
@@ -106,53 +107,6 @@ $tamanho_inputs:34px;
                 padding: 0% 0% 1% 44%;
                 position: relative;
                 font-size: 12px;
-
-            }
-
-            #err-senha
-            {
-                display: none;
-
-            }
-
-            #err-senha2
-            {
-                display: none;
-
-            }
-
-            #err-nome
-            {
-                display: none;
-
-            }
-
-            #err-nome2
-            {
-                display: none;
-
-            }
-
-            #err-nome3
-            {
-                display: none;
-
-            }
-
-            #err-email
-            {
-                display: none;
-
-            }
-
-            #err-email2
-            {
-                display: none;
-
-            }
-            #err-php
-            {
-                display: none;
 
             }
 

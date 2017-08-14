@@ -16,11 +16,7 @@ class Login extends CI_Controller {
 
         $this->load->helper('form');
         $data['title'] = "Sigere";
-        $this->load->view('login_view.php', $data);
-    }
-
-    public function home_view() {
-        
+        $this->load->view('templates/energia_angular/login_view.php', $data);
     }
 
     public function validador_cadastro() {
@@ -54,12 +50,13 @@ class Login extends CI_Controller {
     }
 
     public function validador_login() {
-        $dados_sessao = 0;
 
         $dados_login = array(
             "email" => $this->input->Post("email_login"),
             "senha" => md5($this->input->Post("pwd_login") . HASH),
         );
+
+      
         $retorno_login = [];
 
         $valida = $this->model->valida_login($dados_login);
@@ -73,7 +70,7 @@ class Login extends CI_Controller {
         } else if ($valida['json'] == 2) {
 
             $retorno_login['existe_erro'] = "valido";
-            $retorno_login['usuario'] = $valida["nome_login"];
+            $retorno_login['mensagem'] = $valida["nome_login"];
 
             $usuario = explode(' ', $valida["nome_login"]);
 

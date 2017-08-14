@@ -64,8 +64,8 @@
                     </div>
                 </div>
 
-                <?php $this->load->view('modal/cadastro_view.php'); ?>
-                <?php $this->load->view('modal/senha_view.php'); ?>
+                <?php $this->load->view('templates/energia_jquery/modal/cadastro_view.php'); ?>
+                <?php $this->load->view('templates/energia_jquery/modal/senha_view.php'); ?>
 
 
             </div>

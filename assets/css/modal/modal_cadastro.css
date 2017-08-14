@@ -69,22 +69,6 @@ and open the template in the editor.
         padding: 0% 0% 1% 44%;
         position: relative;
         font-size: 12px; }
-      .geral_modal .visual_modal .footer-cadastro #err-senha {
-        display: none; }
-      .geral_modal .visual_modal .footer-cadastro #err-senha2 {
-        display: none; }
-      .geral_modal .visual_modal .footer-cadastro #err-nome {
-        display: none; }
-      .geral_modal .visual_modal .footer-cadastro #err-nome2 {
-        display: none; }
-      .geral_modal .visual_modal .footer-cadastro #err-nome3 {
-        display: none; }
-      .geral_modal .visual_modal .footer-cadastro #err-email {
-        display: none; }
-      .geral_modal .visual_modal .footer-cadastro #err-email2 {
-        display: none; }
-      .geral_modal .visual_modal .footer-cadastro #err-php {
-        display: none; }
       .geral_modal .visual_modal .footer-cadastro .btn-done {
         width: 25%;
         padding: 10px 0;
